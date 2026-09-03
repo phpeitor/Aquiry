@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aquiry | Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="amvsoft.tech Admin & Dashboard Template" name="description">
+    <meta content="amvsoft.tech" name="author">
+    <link rel="shortcut icon" href="./images/logo-sm.png">
+    <link href="./css/select2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/simplebar.min.css">
+    <link href="./css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <link href="./css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="layout-wrapper">
+
+        <div data-layout-include="layout/header.html"></div>
+
+        <div data-layout-include="layout/sidebar-menu.html"></div>
+        
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+        <div data-layout-include="layout/sidebar-left.html"></div>
+
+        <div class="main-content">
+
+            <div class="page-content">
+                
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Notes</h4>
+                                <nav aria-label="breadcrumb" class="page-title-right">
+                                    <ol class="breadcrumb border-0">
+                                        <li class="breadcrumb-item">
+                                            <a href="#!">
+                                                <i class="mdi mdi-home-outline fs-18 lh-1"></i>
+                                                <span class="visually-hidden">Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a href="#!">Apps</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Notes</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+                    <div class="d-flex flex-wrap flex-xl-nowrap gap-xl-4">
+                        <div class="email-navigation h-100">
+                            <div class="card chat-wrapper p-4 h-100 shadow-sm border-0">
+                                <div class="mb-4">
+                                    <button class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2" data-bs-toggle="modal" data-bs-target="#addNoteModal" id="add-note-btn">
+                                        <i data-eva="plus-outline" class="size-4"></i> Create Note
+                                    </button>
+                                </div>
+
+                                <form class="app-search mb-4">
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control" placeholder="Search notes..." id="search-notes">
+                                        <i data-eva="search-outline" class="align-middle"></i>
+                                    </div>
+                                </form>
+
+                                <div data-simplebar class="mx-n2 px-2" style="max-height: calc(100vh - 350px);">
+                                    <p class="text-muted text-uppercase fs-11 fw-bold mb-3">Categories</p>
+                                    <ul class="list-unstyled mb-8 w-100" id="category-list">
+                                        <li class="mb-1">
+                                            <a href="#!" class="nav-link px-3 py-2 rounded-3 active d-flex align-items-center gap-3 bg-soft-primary text-primary category-link" data-category="all">
+                                                <i data-eva="grid-outline" class="size-5"></i>
+                                                <span class="fw-bold">All Notes</span>
+                                                <span class="badge badge-primary rounded-pill ms-auto" id="all-notes-count">0</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a href="#!" class="nav-link px-3 py-2 rounded-3 d-flex align-items-center gap-3 text-body category-link" data-category="important">
+                                                <i data-eva="star-outline" class="size-5 text-muted"></i>
+                                                <span class="fw-semibold">Important</span>
+                                                <span class="badge badge-label-warning ms-auto" id="important-notes-count">0</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a href="#!" class="nav-link px-3 py-2 rounded-3 d-flex align-items-center gap-3 text-body category-link" data-category="business">
+                                                <i data-eva="briefcase-outline" class="size-5 text-muted"></i>
+                                                <span class="fw-semibold">Business</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a href="#!" class="nav-link px-3 py-2 rounded-3 d-flex align-items-center gap-3 text-body category-link" data-category="personal">
+                                                <i data-eva="person-outline" class="size-5 text-muted"></i>
+                                                <span class="fw-semibold">Personal</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a href="#!" class="nav-link px-3 py-2 rounded-3 d-flex align-items-center gap-3 text-body category-link" data-category="archive">
+                                                <i data-eva="archive-outline" class="size-5 text-muted"></i>
+                                                <span class="fw-semibold">Archive</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a href="#!" class="nav-link px-3 py-2 rounded-3 d-flex align-items-center gap-3 text-body category-link" data-category="trash">
+                                                <i data-eva="trash-2-outline" class="size-5 text-muted"></i>
+                                                <span class="fw-semibold">Trash</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <p class="text-muted text-uppercase fs-11 fw-bold mb-3">Tags</p>
+                                    <ul class="list-unstyled mb-0 w-100">
+                                        <li class="mb-1">
+                                            <a href="#!" class="nav-link px-3 py-2 rounded-3 d-flex align-items-center gap-3 text-body tag-link" data-tag="upcoming">
+                                                <span class="size-2 rounded-circle bg-primary"></span>
+                                                <span class="fw-semibold">Upcoming</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a href="#!" class="nav-link px-3 py-2 rounded-3 d-flex align-items-center gap-3 text-body tag-link" data-tag="completed">
+                                                <span class="size-2 rounded-circle bg-success"></span>
+                                                <span class="fw-semibold">Completed</span>
+                                            </a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a href="#!" class="nav-link px-3 py-2 rounded-3 d-flex align-items-center gap-3 text-body tag-link" data-tag="priority">
+                                                <span class="size-2 rounded-circle bg-danger"></span>
+                                                <span class="fw-semibold">Priority</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-100 mb-4">
+                            <section id="pinned-notes-section">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h5 class="fw-bold mb-0">Pinned Notes <i data-eva="pin" class="size-4 text-primary ms-1"></i></h5>
+                                </div>
+
+                                <div class="row gx-4" id="pinned-notes-grid">
+                                    <!-- Pinned notes will be rendered here -->
+                                </div>
+                            </section>
+
+                            <div class="d-flex align-items-center mb-4">
+                                <h5 class="fw-bold mb-0" id="notes-title">Recent Notes</h5>
+                            </div>
+
+                            <div class="row gx-4" id="notes-grid">
+                                <!-- Regular notes will be rendered here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Note Modal -->
+                    <div class="modal fade" id="addNoteModal" tabindex="-1" aria-labelledby="addNoteModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="addNoteModalLabel">Create New Note</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="addNoteForm">
+                                        <input type="hidden" id="note-id">
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <label class="form-label">Note Title</label>
+                                                <input type="text" class="form-control" placeholder="Enter note title" id="note-title-input" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Category</label>
+                                                <select class="form-select" id="note-category-select">
+                                                    <option value="Personal" selected>Personal</option>
+                                                    <option value="Business">Business</option>
+                                                    <option value="Social">Social</option>
+                                                    <option value="Important">Important</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Priority</label>
+                                                <select class="form-select" id="note-priority-select">
+                                                    <option value="Low" selected>Low</option>
+                                                    <option value="Medium">Medium</option>
+                                                    <option value="High">High</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label">Note Content</label>
+                                                <textarea class="form-control" rows="6" placeholder="Write your note here..." id="note-description-textarea"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+                                    <button type="button" class="btn btn-primary" id="save-note-btn">Save Note</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div data-layout-include="layout/footer.html"></div>
+
+        </div>
+    </div>
+
+    <div data-layout-include="layout/rightbar.html"></div>
+
+    <div data-layout-include="layout/switcher.html"></div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/metisMenu.min.js"></script>
+    <script src="./js/simplebar.min.js"></script>
+    <script src="./js/eva.min.js"></script>
+    <script src="./js/scroll-top.init.js"></script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/apexcharts.min.js"></script>
+    <script src="./js/layout-loader.js"></script>
+    <script src="./js/notes.init.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
