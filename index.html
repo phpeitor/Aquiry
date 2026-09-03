@@ -5,7 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="./resources/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aquiry | Login Rive</title>
-    <script type="module" crossorigin src="./js/aira.js?v=3.5"></script>
+    <script src="https://unpkg.com/@rive-app/canvas@2.42.0/rive.js"></script>
+    <script defer src="./js/login-rive.js?v=1.2"></script>
     <link rel="stylesheet" crossorigin href="./css/aira.css?v=3.4">    
     <link rel="stylesheet" href="./css/login-validation.css">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
@@ -16,7 +17,26 @@
       <source src="./resources/main.mp4" type="video/mp4">
       Tu navegador no soporta la reproducción de video.
     </video>
-    <div id="root"></div>
+    <div id="root">
+      <div class="login-form-component-root">
+        <div class="login-form-wrapper">
+          <div class="rive-wrapper">
+            <canvas id="rive-canvas" class="rive-container"></canvas>
+          </div>
+          <div class="form-container">
+            <form id="login-form" novalidate>
+              <label>
+                <input type="text" class="form-username" name="username" placeholder="Username" maxlength="33" autocomplete="username">
+              </label>
+              <label>
+                <input type="password" class="form-pass" name="password" placeholder="Password" maxlength="12" autocomplete="current-password">
+              </label>
+              <button type="submit" class="login-btn">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
   </body>
 </html>
