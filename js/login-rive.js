@@ -32,8 +32,10 @@ const successStates = [
 const errorStates = ["hard stop", "disagree", "embarassed transition", "empathy"];
 const passwordStates = ["thinking loop"];
 const focusTriggers = ["islistening", "idle"];
+const redirectDelay = 4500;
 
 let rive;
+let isSubmitting = false;
 
 if (RuntimeLoader) {
   RuntimeLoader.setWasmUrl("https://unpkg.com/@rive-app/canvas@2.42.0/rive.wasm");
@@ -78,7 +80,42 @@ function fireTrigger(name) {
     return true;
   }
 
+  if (rive?.animationNames?.includes(name) && typeof rive.play === "function") {
+    rive.play(name);
+    return true;
+  }
+
   return false;
+}
+
+function playState(name) {
+  if (rive?.animationNames?.includes(name) && typeof rive.play === "function") {
+    rive.stop?.();
+    rive.play(name);
+    return true;
+  }
+
+  return fireTrigger(name);
+}
+
+function playRandomState(names) {
+  const randomName = names[Math.floor(Math.random() * names.length)];
+
+  if (playState(randomName)) {
+    return;
+  }
+
+  for (const name of names) {
+    if (playState(name)) {
+      return;
+    }
+  }
+}
+
+function restartStateMachine() {
+  if (typeof rive?.play === "function") {
+    rive.play("State Machine 5");
+  }
 }
 
 function fireFirst(names) {
@@ -112,6 +149,10 @@ function setValidationError(show) {
 }
 
 function notify(type, message) {
+  if (window.alertify && typeof window.alertify.dismissAll === "function") {
+    window.alertify.dismissAll();
+  }
+
   if (window.alertify && typeof window.alertify[type] === "function") {
     window.alertify[type](message);
     return;
@@ -158,30 +199,41 @@ password?.addEventListener("input", () => {
 form?.addEventListener("submit", (event) => {
   event.preventDefault();
 
+  if (isSubmitting) {
+    return;
+  }
+
   const userValue = username.value.trim();
   const passValue = password.value.trim();
 
   if (!userValue || !passValue) {
     setValidationError(true);
-    fireRandom(errorStates);
-    notify("error", "Ingresa usuario y password.");
+    playRandomState(errorStates);
+    notify("error", "Ingresa usuario y password");
+    setTimeout(restartStateMachine, 1800);
     return;
   }
 
   setValidationError(false);
 
   if (userValue === validDemoUser && passValue === validDemoPass) {
+    isSubmitting = true;
     setButtonState("Ingresando...", true);
     notify("success", "Login exitoso. Redirigiendo...");
-    setTimeout(() => fireRandom(successStates), 250);
+    setTimeout(() => playRandomState(successStates), 150);
     setTimeout(() => {
       window.location.href = "dashboard.html";
-    }, 1800);
+    }, redirectDelay);
     return;
   }
 
+  isSubmitting = true;
   setButtonState("Error", true);
-  notify("error", "Usuario o password incorrecto.");
-  setTimeout(() => fireRandom(errorStates), 250);
-  setTimeout(() => setButtonState("Login", false), 1500);
+  notify("error", "Usuario o password incorrecto");
+  setTimeout(() => playRandomState(errorStates), 150);
+  setTimeout(() => {
+    restartStateMachine();
+    isSubmitting = false;
+    setButtonState("Login", false);
+  }, 1800);
 });
