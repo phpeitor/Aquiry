@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aquiry | Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="amvsoft.tech Admin & Dashboard Template" name="description">
+    <meta content="amvsoft.tech" name="author">
+    <link rel="shortcut icon" href="./images/logo-sm.png">
+    <link href="./css/select2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/simplebar.min.css">
+    <link href="./css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <link href="./css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="layout-wrapper">
+
+        <div data-layout-include="layout/header.html"></div>
+
+        <div data-layout-include="layout/sidebar-menu.html"></div>
+        
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+        <div class="main-content">
+
+            <div class="page-content">
+                
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">FAQ's</h4>
+                                <nav aria-label="breadcrumb" class="page-title-right">
+                                    <ol class="breadcrumb border-0">
+                                        <li class="breadcrumb-item">
+                                            <a href="#!">
+                                                <i class="mdi mdi-home-outline fs-18 lh-1"></i>
+                                                <span class="visually-hidden">Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a href="#!">Pages</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">FAQ's</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-10 col-xxl-8">
+                            <div class="row justify-content-center">
+                                <div class="card overflow-hidden position-relative faq-card">
+                                    <div class="card-body">
+                                    <div class="d-flex flex-wrap justify-content-between align-items-start mb-8 mb-lg-12">
+                                        <div class="display-6 fw-normal">
+                                            <p class="mb-1">If you have any questions</p>
+                                            <p class="text-muted mb-0">please do not hesitate to contact us.</p>
+                                        </div>
+                                        <div class="mt-3">
+                                            <button type="button" class="btn btn-outline-light">Email Us</button>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="accordion accordion-border" id="accordionAdmin-1">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-admin-1" aria-expanded="false" aria-controls="collapseOne-admin-1">
+                                                            <i class="fas fa-user-shield me-2 align-middle"></i> How do I manage user roles?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne-admin-1" class="accordion-collapse collapse" data-bs-parent="#accordionAdmin-1" style="">
+                                                        <div class="accordion-body">
+                                                            <p class="text-muted mb-0">
+                                                                You can assign, update, or revoke user roles in the User Management section.
+                                                                Changes apply instantly across the admin panel.You can export detailed reports anytime for review.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-admin-1" aria-expanded="true" aria-controls="collapseTwo-admin-1">
+                                                            <i class="fas fa-database me-2 align-middle"></i> Where is data stored?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo-admin-1" class="accordion-collapse collapse show" data-bs-parent="#accordionAdmin-1" style="">
+                                                        <div class="accordion-body">
+                                                            <p class="text-muted mb-0">
+                                                                All data is stored securely in our cloud database.
+                                                                Daily backups ensure no loss of important records. You can export detailed reports anytime for review. Changes apply instantly across the admin panel
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-admin-1" aria-expanded="false" aria-controls="collapseThree-admin-1">
+                                                            <i class="fas fa-bell me-2 align-middle"></i> How do notifications work?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree-admin-1" class="accordion-collapse collapse" data-bs-parent="#accordionAdmin-1">
+                                                        <div class="accordion-body">
+                                                            <p class="text-muted mb-0">
+                                                                Notifications alert admins about user activities and system updates. Changes apply instantly across the admin panel
+                                                                You can configure alerts in the Settings panel. You can export detailed reports anytime for review.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour-admin-1" aria-expanded="false" aria-controls="collapseFour-admin-1">
+                                                            <i class="fas fa-cogs me-2 align-middle"></i> How to customize settings?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseFour-admin-1" class="accordion-collapse collapse" data-bs-parent="#accordionAdmin-1">
+                                                        <div class="accordion-body">
+                                                            <p class="text-muted mb-0">
+                                                                Open the Admin Settings page to update branding, permissions, and modules.
+                                                                Save changes to apply them across all dashboards. You can export detailed reports anytime for review.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="accordion accordion-border" id="accordionAdmin-2">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-admin-2" aria-expanded="true" aria-controls="collapseOne-admin-2">
+                                                            <i class="fas fa-chart-line me-2 align-middle"></i> How to view analytics?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne-admin-2" class="accordion-collapse collapse show">
+                                                        <div class="accordion-body">
+                                                            <p class="text-muted mb-0">
+                                                                The Analytics dashboard provides user, revenue, and traffic insights.
+                                                                Data updates in real time for better decision-making.
+                                                                You can export detailed reports anytime for review.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-admin-2" aria-expanded="true" aria-controls="collapseTwo-admin-2">
+                                                            <i class="fas fa-shield-alt me-2 align-middle"></i> How is security handled?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo-admin-2" class="accordion-collapse collapse show">
+                                                        <div class="accordion-body">
+                                                            <p class="text-muted mb-0">
+                                                                Multi-factor authentication and encrypted connections protect your data.
+                                                                Access logs let you track all admin activities.
+                                                                Regular audits ensure compliance with security standards.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-admin-2" aria-expanded="true" aria-controls="collapseThree-admin-2">
+                                                            <i class="fas fa-life-ring me-2 align-middle"></i> Where to get support?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree-admin-2" class="accordion-collapse collapse show">
+                                                        <div class="accordion-body">
+                                                            <p class="text-muted mb-0">
+                                                                Support is available through the Help Center and live chat.
+                                                                Our team responds within 24 hours for all admin issues.
+                                                                Priority assistance is available for enterprise customers.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour-admin-2" aria-expanded="true" aria-controls="collapseFour-admin-2">
+                                                            <i class="fas fa-sync-alt me-2 align-middle"></i> How to update the system?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseFour-admin-2" class="accordion-collapse collapse show">
+                                                        <div class="accordion-body">
+                                                            <p class="text-muted mb-0">
+                                                                Go to the Updates section to check for the latest version.
+                                                                Click “Update Now” to apply new features Updates section to check for and fixes.
+                                                                Updates run in the background without downtime.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./images/faq.png" alt="FAQ's" class="position-absolute opacity-75 faq-vector d-none d-md-block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div data-layout-include="layout/footer.html"></div>
+
+        </div>
+    </div>
+
+    <div data-layout-include="layout/rightbar.html"></div>
+
+    <div data-layout-include="layout/switcher.html"></div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/metisMenu.min.js"></script>
+    <script src="./js/simplebar.min.js"></script>
+    <script src="./js/eva.min.js"></script>
+    <script src="./js/scroll-top.init.js"></script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/apexcharts.min.js"></script>
+    <script src="./js/analytics.init.js"></script>
+    <script src="./js/layout-loader.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
