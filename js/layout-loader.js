@@ -17,12 +17,20 @@
       });
   }
 
-  var includes = Array.prototype.slice.call(
-    document.querySelectorAll("[data-layout-include]")
-  );
+  function loadIncludes() {
+    var includes = Array.prototype.slice.call(
+      document.querySelectorAll("[data-layout-include]")
+    );
+
+    if (!includes.length) {
+      return Promise.resolve();
+    }
+
+    return Promise.all(includes.map(includePartial)).then(loadIncludes);
+  }
 
   window.LayoutIncludes = {
-    ready: Promise.all(includes.map(includePartial)).then(function () {
+    ready: loadIncludes().then(function () {
       document.dispatchEvent(new CustomEvent("layout:loaded"));
     })
   };
