@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aquiry | Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="amvsoft.tech Admin & Dashboard Template" name="description">
+    <meta content="amvsoft.tech" name="author">
+    <link rel="shortcut icon" href="./images/logo-sm.png">
+    <link href="./css/select2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/simplebar.min.css">
+    <link href="./css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <link href="./css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="layout-wrapper">
+
+        <div data-layout-include="layout/header.html"></div>
+
+        <div data-layout-include="layout/sidebar-menu.html"></div>
+        
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+        <div data-layout-include="layout/sidebar-left.html"></div>
+
+        <div class="main-content">
+
+            <div class="page-content">
+                
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">widget Chart</h4>
+                                <nav aria-label="breadcrumb" class="page-title-right">
+                                    <ol class="breadcrumb border-0">
+                                        <li class="breadcrumb-item">
+                                            <a href="#!">
+                                                <i class="mdi mdi-home-outline fs-18 lh-1"></i>
+                                                <span class="visually-hidden">Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a href="#!">Elements</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">widget Chart</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xxl-5 col-xl-7">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Daily Revenue Report</h5>
+                                    <div class="dropdown">
+                                        <a href="#!" class="text-muted dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-label="more">Monthly</a>
+                                        <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#!">Weekly</a></li>
+                                            <li><a class="dropdown-item" href="#!">Monthly</a></li>
+                                            <li><a class="dropdown-item" href="#!">Yearly</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="images_scatter2" data-colors='["--bs-primary", "--bs-danger"]' class="apex-charts" dir="ltr"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-md-7 col-xl-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Patient Status</h5>
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-label="more">Weekly</a>
+                                                <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Weekly</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Monthly</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Yearly</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="patientsStatus" data-colors='["var(--bs-primary)", "var(--bs-secondary)"]' class="apex-charts" dir="ltr"></div>
+                                        </div>
+                                    </div>                       
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-start justify-content-between mb-1">
+                                                <div>
+                                                    <h4 class="fw-medium">$71.5k</h4>
+                                                    <p class="text-muted fs-14 mb-0">Monthly Earnings</p>
+                                                </div>
+                                                <span class="text-success"><i data-eva="trending-up" class="size-4 me-1"></i>3.5%</span>
+                                            </div>
+                                            <div id="monthlyEarningsChart" data-colors='["var(--bs-success)"]' class="apex-charts" dir="ltr"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-start justify-content-between mb-1">
+                                                <div>
+                                                    <h4 class="fw-medium">185k</h4>
+                                                    <p class="text-muted fs-14 mb-0">Weekly Orders</p>
+                                                </div>
+                                                <span class="text-danger"><i data-eva="trending-down" class="size-4 me-1"></i>4.5%</span>
+                                            </div>
+                                            <div id="weeklyOrdersChart" data-colors='["--bs-danger-rgb,0.3"]' class="apex-charts mb-4" dir="ltr"></div>
+                                            <span class="text-muted">Last week <span class="text-success fw-medium">+8.2%</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-xxl-3 col-md-5 col-xl-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Patient by Age</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div id="patientByAge" data-colors='["var(--bs-primary)", "var(--bs-secondary)", "var(--bs-danger)", "var(--bs-info)", "var(--bs-warning)"]' class="apex-charts mb-2" dir="ltr"></div>
+                                    <div class="d-flex flex-wrap justify-content-center gap-5 align-items-center mt-3">
+                                        <a href="#!" class="text-body d-flex align-items-center gap-3">
+                                            <span class="size-3 text-primary rounded-circle overflow-hidden revenue-icon gradient-primary"></span>
+                                            <span class="fw-medium">0 - 10 yrs</span>
+                                        </a>
+                                        <a href="#!" class="text-body d-flex align-items-center gap-3">
+                                            <span class="size-3 text-secondary rounded-circle overflow-hidden revenue-icon gradient-secondary"></span>
+                                            <span class="fw-medium">11 - 20 yrs</span>
+                                        </a>
+                                        <a href="#!" class="text-body d-flex align-items-center gap-3">
+                                            <span class="size-3 text-danger rounded-circle overflow-hidden revenue-icon gradient-danger"></span>
+                                            <span class="fw-medium">21 - 30 yrs</span>
+                                        </a>
+                                        <a href="#!" class="text-body d-flex align-items-center gap-3">
+                                            <span class="size-3 text-info rounded-circle overflow-hidden revenue-icon gradient-info"></span>
+                                            <span class="fw-medium">31 - 40 yrs</span>
+                                        </a>
+                                        <a href="#!" class="text-body d-flex align-items-center gap-3">
+                                            <span class="size-3 text-warning rounded-circle overflow-hidden revenue-icon gradient-warning"></span>
+                                            <span class="fw-medium">41+ yrs</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                                      
+                        <div class="col-xxl-8 col-xl-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Invoice Status</h5>
+                                    <div class="dropdown">
+                                        <a href="#!" class="text-muted" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i data-eva="more-vertical-outline" class="size-4"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#!">Weekly</a></li>
+                                            <li><a class="dropdown-item" href="#!">Monthly</a></li>
+                                            <li><a class="dropdown-item" href="#!">Yearly</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap gap-8 align-items-center mb-5">
+                                        <div class="d-flex gap-4 align-items-center">
+                                            <div class="avatar avatar-xs text-secondary avatar-circle overflow-hidden revenue-icon gradient-secondary">
+                                                <i data-eva="home-outline" class="size-5"></i>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1 text-muted">Domestic Invoice</p>
+                                                <h5 class="mb-0 fw-medium"><span data-counter="85412" data-prefix="$"></span></h5>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex gap-4 align-items-center">
+                                            <div class="avatar avatar-xs text-success avatar-circle overflow-hidden revenue-icon gradient-success">
+                                                <i data-eva="globe-outline" class="size-5"></i>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1 text-muted">International Invoice</p>
+                                                <h5 class="mb-0 fw-medium"><span data-counter="24578" data-prefix="$"></span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="invoiceStatus" data-colors='["var(--bs-secondary)", "var(--bs-success)"]' class="apex-charts" dir="ltr"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Team & Productivity</h5>
+                                    <div class="dropdown">
+                                        <a href="#!" class="text-muted dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-label="more">Monthly</a>
+                                        <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#!">Weekly</a></li>
+                                            <li><a class="dropdown-item" href="#!">Monthly</a></li>
+                                            <li><a class="dropdown-item" href="#!">Yearly</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="text-center flex-fill border-end pe-3">
+                                            <h5 class="fw-medium mb-1">320</h5>
+                                            <p class="mb-0 text-muted">Total Deals</p>
+                                        </div>
+                                        <div class="text-center flex-fill border-end px-3">
+                                            <h5 class="fw-medium mb-1">185</h5>
+                                            <p class="mb-0 text-muted">Calls Made</p>
+                                        </div>
+                                        <div class="text-center flex-fill ps-3">
+                                            <h5 class="fw-medium mb-1">72</h5>
+                                            <p class="mb-0 text-muted">Meetings</p>
+                                        </div>
+                                    </div>
+                                    <div id="teamProductivityChart" data-colors='["var(--bs-danger)", "var(--bs-success)"]' class="apex-charts" dir="ltr"></div>
+                                </div>
+                            </div>
+                        </div>            
+                        <div class="col-xxl-4 col-xl-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Sales Analytics</h5>
+                                    <div class="dropdown">
+                                        <a href="#!" class="text-muted dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-label="more">Monthly</a>
+                                        <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#!">Weekly</a></li>
+                                            <li><a class="dropdown-item" href="#!">Monthly</a></li>
+                                            <li><a class="dropdown-item" href="#!">Yearly</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-end">
+                                        <div>
+                                            <h3 class="fw-medium">$32,450</h3>
+                                            <p class="text-muted mb-0">Total Sales This Month</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <p class="text-muted mb-2">Sales Increase This Month</p>
+                                            <p class="fw-medium fs-16 mb-0">+54.6%</p>
+                                        </div>
+                                    </div>                                
+                                    <div id="monthlySalesChart" data-colors='["--bs-primary"]' class="apex-charts" dir="ltr"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-6 col-xl-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Sales & Deals</h5>
+                                    <div class="dropdown float-end">
+                                        <a href="#!" class="text-muted" data-bs-toggle="dropdown" aria-expanded="false" aria-label="more"><i data-eva="more-vertical-outline" class="size-4"></i></a>
+                                        <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#!">Last 7 Days</a></li>
+                                            <li><a class="dropdown-item" href="#!">Last 30 Days</a></li>
+                                            <li><a class="dropdown-item" href="#!">Level Up Progress</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="salesDealsChart" data-colors='["var(--bs-warning)", "var(--bs-danger)", "var(--bs-primary)"]' class="apex-charts" dir="ltr"></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="dropdown float-end position-relative z-1">
+                                        <a href="#!" class="text-muted" data-bs-toggle="dropdown" aria-expanded="false" aria-label="more"><i data-eva="more-horizontal-outline" class="size-4"></i></a>
+                                        <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#!">Last 7 Days</a></li>
+                                            <li><a class="dropdown-item" href="#!">Last 30 Days</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="d-flex justify-content-between flex-column h-100">
+                                                <h6 class="fw-medium fs-14">ToTal Male</h6>
+                                                <div>
+                                                    <span class="fw-medium text-info fs-14">3.5% <i data-eva="trending-up-outline" class="size-4"></i></span>
+                                                    <p class="mb-0 mt-3 fs-3 fw-medium">51.34%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div id="maleChart" data-colors='["var(--bs-warning)"]' class="apex-charts" dir="ltr"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-6 col-xl-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Lead management</h5>
+                                    <span class="badge badge-label-success">12.5%</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="position-relative mb-6">
+                                        <div id="leadRadialChart" data-colors='["var(--bs-success)"]' class="apex-charts" dir="ltr"></div>
+                                        <div class="position-absolute rounded-circle d-flex justify-content-center align-items-center fw-semibold shadow-lg bg-body-secondary size-8 fs-10 lead-management-value">70%</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-6">
+                                        <div class="text-center flex-fill border-end pe-3">
+                                            <h5 class="fw-medium mb-1">42</h5>
+                                            <p class="mb-0 text-muted">New Leads</p>
+                                        </div>
+                                        <div class="text-center flex-fill border-end px-3">
+                                            <h5 class="fw-medium mb-1">29</h5>
+                                            <p class="mb-0 text-muted">Leads Converted</p>
+                                        </div>
+                                        <div class="text-center flex-fill ps-3">
+                                            <h5 class="fw-medium mb-1">13</h5>
+                                            <p class="mb-0 text-muted">Leads Pending</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown float-end">
+                                        <a href="#!" class="text-muted" data-bs-toggle="dropdown" aria-expanded="false" aria-label="more"><i data-eva="more-vertical-outline" class="size-4"></i></a>
+                                        <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#!">Last 7 Days</a></li>
+                                            <li><a class="dropdown-item" href="#!">Last 30 Days</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex align-items-end gap-2 mb-5">
+                                        <div class="avatar avatar-sm">
+                                            <img src="./images/avatar-7.png" alt="Avatar Image" class="size-7">
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="text-body fw-semibold lh-lg">Sarah Taylor</a>
+                                            <p class="text-muted mb-0">Marketing Manager</p>
+                                        </div>
+                                    </div>
+                                    <p class="mb-4 text-muted d-flex justify-content-between align-items-center">
+                                        <span>leads converted</span>
+                                        <span class="fw-semibold text-body">70% leads</span> 
+                                    </p>
+                                    <div class="d-flex gap-2">
+                                        <div class="progress progress-sm w-25">
+                                            <div class="progress-bar bg-info" style="width: 100%;"></div>
+                                        </div>
+                                        <div class="progress progress-sm w-50">
+                                            <div class="progress-bar bg-primary" style="width: 100%;"></div>
+                                        </div>
+                                        <div class="progress progress-sm w-75">
+                                            <div class="progress-bar bg-success" style="width: 100%;"></div>
+                                        </div>
+                                        <div class="progress progress-sm w-50">
+                                            <div class="progress-bar bg-warning" style="width: 100%;"></div>
+                                        </div>
+                                        <div class="progress progress-sm w-100 bg-danger-subtle">
+                                            <div class="progress-bar bg-danger" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-6 col-xl-4">
+                            <div class="card overflow-hidden">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0">Patient Overview</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div id="patient-overview-chart" data-colors='["var(--bs-warning)", "var(--bs-info)", "var(--bs-primary)", "var(--bs-success)", "var(--bs-danger)"]' class="apex-charts mb-6
+                                    " dir="ltr"></div>
+                                    <div class="d-flex flex-column gap-4">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <span class="marker marker-dot text-warning m-0 me-1"></span>
+                                                <span class="text-muted mb-0">Health</span>
+                                            </div>
+                                            <span class="mb-0 fw-medium text-end">38%</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <span class="marker marker-dot text-info m-0 me-1"></span>
+                                                <span class="text-muted mb-0">Nutrition</span>
+                                            </div>
+                                            <span class="mb-0 fw-medium text-end">25%</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <span class="marker marker-dot text-primary m-0 me-1"></span>
+                                                <span class="text-muted mb-0">Exercise</span>
+                                            </div>
+                                            <span class="mb-0 fw-medium text-end">44%</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <span class="marker marker-dot text-success m-0 me-1"></span>
+                                                <span class="text-muted mb-0">Mental Wellbeing</span>
+                                            </div>
+                                            <span class="mb-0 fw-medium text-end">35%</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <span class="marker marker-dot text-danger m-0 me-1"></span>
+                                                <span class="text-muted mb-0">Sleep</span>
+                                            </div>
+                                            <span class="mb-0 fw-medium text-end">25%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div data-layout-include="layout/footer.html"></div>
+
+        </div>
+    </div>
+
+    <div data-layout-include="layout/rightbar.html"></div>
+
+    <div data-layout-include="layout/switcher.html"></div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/metisMenu.min.js"></script>
+    <script src="./js/simplebar.min.js"></script>
+    <script src="./js/eva.min.js"></script>
+    <script src="./js/scroll-top.init.js"></script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/apexcharts.min.js"></script>
+    <script src="./js/layout-loader.js"></script>
+    <script src="./js/chart.init.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
