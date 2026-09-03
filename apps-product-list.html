@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aquiry | Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="amvsoft.tech Admin & Dashboard Template" name="description">
+    <meta content="amvsoft.tech" name="author">
+    <link rel="shortcut icon" href="./images/logo-sm.png">
+    <link href="./css/select2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/simplebar.min.css">
+    <link href="./css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <link href="./css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="layout-wrapper">
+
+        <div data-layout-include="layout/header.html"></div>
+
+        <div data-layout-include="layout/sidebar-menu.html"></div>
+        
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+        <div class="main-content">
+
+            <div class="page-content">
+                
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Patient List</h4>
+                                <nav aria-label="breadcrumb" class="page-title-right">
+                                    <ol class="breadcrumb border-0">
+                                        <li class="breadcrumb-item">
+                                            <a href="#!">
+                                                <i class="mdi mdi-home-outline fs-18 lh-1"></i>
+                                                <span class="visually-hidden">Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a href="#!">Hospital</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Patient List</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xxl-2 col-md-4 col-sm-6">
+                            <div class="card position-relative overflow-hidden bg-info bg-opacity-10">
+                                <img src="./images/patient-card-1.png" alt="background image" class="img-fluid position-absolute top-0 start-0 opacity-50">
+                                <div class="card-body text-center">
+                                    <div class="avatar-md avatar avatar-info avatar-circle mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-people-outline"><g data-name="Layer 2"><g data-name="people"><rect width="24" height="24" opacity="0"></rect><path d="M9 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0-6a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"></path><path d="M17 13a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0-4a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"></path><path d="M17 14a5 5 0 0 0-3.06 1.05A7 7 0 0 0 2 20a1 1 0 0 0 2 0 5 5 0 0 1 10 0 1 1 0 0 0 2 0 6.9 6.9 0 0 0-.86-3.35A3 3 0 0 1 20 19a1 1 0 0 0 2 0 5 5 0 0 0-5-5z"></path></g></g></svg>
+                                    </div>
+                                    <h5 class="mb-1">352</h5>
+                                    <p class="mb-0 text-muted">Total Patients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4 col-sm-6">
+                            <div class="card position-relative overflow-hidden bg-success bg-opacity-10">
+                                <img src="./images/patient-card-2.png" alt="background image" class="img-fluid position-absolute top-0 start-0 opacity-50">
+                                <div class="card-body text-center">
+                                    <div class="avatar-md avatar avatar-success avatar-circle mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-activity-outline"><g data-name="Layer 2"><g data-name="activity"><rect width="24" height="24" transform="rotate(90 12 12)" opacity="0"></rect><path d="M14.33 20h-.21a2 2 0 0 1-1.76-1.58L9.68 6l-2.76 6.4A1 1 0 0 1 6 13H3a1 1 0 0 1 0-2h2.34l2.51-5.79a2 2 0 0 1 3.79.38L14.32 18l2.76-6.38A1 1 0 0 1 18 11h3a1 1 0 0 1 0 2h-2.34l-2.51 5.79A2 2 0 0 1 14.33 20z"></path></g></g></svg>
+                                    </div>
+                                    <h5 class="mb-1">120</h5>
+                                    <p class="mb-0 text-muted">Admitted</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4 col-sm-6">
+                            <div class="card position-relative overflow-hidden bg-pink bg-opacity-10">
+                                <img src="./images/patient-card-3.png" alt="background image" class="img-fluid position-absolute top-0 start-0 opacity-50">
+                                <div class="card-body text-center">
+                                    <div class="avatar-md avatar avatar-pink avatar-circle mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-checkmark-circle-2-outline"><g data-name="Layer 2"><g data-name="checkmark-circle-2"><rect width="24" height="24" opacity="0"></rect><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M14.7 8.39l-3.78 5-1.63-2.11a1 1 0 0 0-1.58 1.23l2.43 3.11a1 1 0 0 0 .79.38 1 1 0 0 0 .79-.39l4.57-6a1 1 0 1 0-1.6-1.22z"></path></g></g></svg>
+                                    </div>
+                                    <h5 class="mb-1">80</h5>
+                                    <p class="mb-0 text-muted">Discharged</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4 col-sm-6">
+                            <div class="card position-relative overflow-hidden bg-warning bg-opacity-10">
+                                <img src="./images/patient-card-4.png" alt="background image" class="img-fluid position-absolute top-0 start-0 opacity-50">
+                                <div class="card-body text-center">
+                                    <div class="avatar-md avatar avatar-warning avatar-circle mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-clock-outline"><g data-name="Layer 2"><g data-name="clock"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M16 11h-3V8a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1h4a1 1 0 0 0 0-2z"></path></g></g></svg>
+                                    </div>
+                                    <h5 class="mb-1">25</h5>
+                                    <p class="mb-0 text-muted">Pending</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4 col-sm-6">
+                            <div class="card position-relative overflow-hidden bg-danger bg-opacity-10">
+                                <img src="./images/patient-card-5.png" alt="background image" class="img-fluid position-absolute top-0 start-0 opacity-50">
+                                <div class="card-body text-center">
+                                    <div class="avatar-md avatar avatar-danger avatar-circle mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-alert-circle-outline"><g data-name="Layer 2"><g data-name="alert-circle"><rect width="24" height="24" opacity="0"></rect><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><circle cx="12" cy="16" r="1"></circle><path d="M12 7a1 1 0 0 0-1 1v5a1 1 0 0 0 2 0V8a1 1 0 0 0-1-1z"></path></g></g></svg>
+                                    </div>
+                                    <h5 class="mb-1">10</h5>
+                                    <p class="mb-0 text-muted">Critical</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-md-4 col-sm-6">
+                            <div class="card position-relative overflow-hidden bg-secondary bg-opacity-10">
+                                <img src="./images/patient-card-6.png" alt="background image" class="img-fluid position-absolute top-0 start-0 opacity-50">
+                                <div class="card-body text-center">
+                                    <div class="avatar-md avatar avatar-secondary avatar-circle mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-calendar-outline"><g data-name="Layer 2"><g data-name="calendar"><rect width="24" height="24" opacity="0"></rect><path d="M18 4h-1V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zM6 6h1v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h1a1 1 0 0 1 1 1v4H5V7a1 1 0 0 1 1-1zm12 14H6a1 1 0 0 1-1-1v-6h14v6a1 1 0 0 1-1 1z"></path><circle cx="8" cy="16" r="1"></circle><path d="M16 15h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2z"></path></g></g></svg>
+                                    </div>
+                                    <h5 class="mb-1">45</h5>
+                                    <p class="mb-0 text-muted">Appointments Today</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header flex-wrap gap-2">
+                            <div class="d-flex align-items-center gap-3 flex-wrap flex-lg-nowrap">
+                                <form class="app-search">
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control bg-body-tertiary min-w-60" placeholder="Search Patient...">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-search-outline align-middle"><g data-name="Layer 2"><g data-name="search"><rect width="24" height="24" opacity="0"></rect><path d="M20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 11a6 6 0 1 1 6 6 6 6 0 0 1-6-6z"></path></g></g></svg>
+                                    </div>
+                                </form>
+                                <div class="dropdown">
+                                    <button type="button" class="btn bg-body-tertiary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-options-2-outline size-4"><g data-name="Layer 2"><g data-name="options-2"><rect width="24" height="24" transform="rotate(90 12 12)" opacity="0"></rect><path d="M19 9a3 3 0 0 0-2.82 2H3a1 1 0 0 0 0 2h13.18A3 3 0 1 0 19 9zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"></path><path d="M3 7h1.18a3 3 0 0 0 5.64 0H21a1 1 0 0 0 0-2H9.82a3 3 0 0 0-5.64 0H3a1 1 0 0 0 0 2zm4-2a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"></path><path d="M21 17h-7.18a3 3 0 0 0-5.64 0H3a1 1 0 0 0 0 2h5.18a3 3 0 0 0 5.64 0H21a1 1 0 0 0 0-2zm-10 2a1 1 0 1 1 1-1 1 1 0 0 1-1 1z"></path></g></g></svg> Filter
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-animated dropdown-menu-md-end">
+                                        <a class="dropdown-item" href="#!">Date: Newest First</a>
+                                        <a class="dropdown-item" href="#!">Date: Oldest First</a>
+                                        <a class="dropdown-item" href="#!">Customer Name A-Z</a>
+                                        <a class="dropdown-item" href="#!">Customer Name Z-A</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <div class="dropdown">
+                                    <button type="button" class="btn bg-body-tertiary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    All Status
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-md-end">
+                                        <li><a class="dropdown-item" href="#!">Active</a></li>
+                                        <li><a class="dropdown-item" href="#!">Inactive</a></li>
+                                        <li><a class="dropdown-item" href="#!">Pending</a></li>
+                                        <li><a class="dropdown-item" href="#!">Completed</a></li>
+                                        <li><a class="dropdown-item" href="#!">Archived</a></li>
+                                    </ul>
+                                </div>
+                                <a href="apps-create-product.html" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-plus-circle-outline size-4"><g data-name="Layer 2"><g data-name="plus-circle"><rect width="24" height="24" opacity="0"></rect><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M15 11h-2V9a1 1 0 0 0-2 0v2H9a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0v-2h2a1 1 0 0 0 0-2z"></path></g></g></svg> New Patient</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive text-nowrap">
+                                <table class="table align-middle mb-0">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Patient Name</th>
+                                            <th>Age</th>
+                                            <th>Gender</th>
+                                            <th>Contact</th>
+                                            <th>Disease</th>
+                                            <th>Ward</th>
+                                            <th>Doctor Assigned</th>
+                                            <th>Status</th>
+                                            <th>Last Visit</th>
+                                            <th class="text-end">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>                                    
+                                        <tr>
+                                            <td><a href="#!" class="text-muted">#PAT-101</a></td>
+                                            <td>
+                                                <a href="apps-patient-overview.html" class="d-flex align-items-center gap-2 text-body">                                               
+                                                    <span class="avatar avatar-sm avatar-circle overflow-hidden">
+                                                        <img src="./images/avatar-3.png" alt="Avatar Image" class="size-7">
+                                                    </span>                                                
+                                                    <p class="fw-semibold mb-0">Emma Wilson</p>                                                
+                                                </a>
+                                            </td>
+                                            <td>28</td>
+                                            <td>Male</td>
+                                            <td>+91 5455-1010</td>
+                                            <td>Asthma</td>
+                                            <td>Ward A-12</td>
+                                            <td>Dr. Sarah Lee</td>
+                                            <td><span class="badge badge-label-success">Stable</span></td>
+                                            <td>2025-09-02</td>
+                                            <td class="text-end">
+                                                <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-edit-2-outline"><g data-name="Layer 2"><g data-name="edit-2"><rect width="24" height="24" opacity="0"></rect><path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"></path><path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6zm-8.9 8.91L12 7.32l2.7 2.7-5.6 5.6-3 .28z"></path></g></g></svg></button>
+                                                <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-trash-2-outline"><g data-name="Layer 2"><g data-name="trash-2"><rect width="24" height="24" opacity="0"></rect><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2zM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12z"></path><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path><path d="M15 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path></g></g></svg></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#!" class="text-muted">#PAT-102</a></td>
+                                            <td>
+                                                <a href="apps-patient-overview.html" class="d-flex align-items-center gap-2 text-body">                                               
+                                                    <span class="avatar avatar-sm avatar-circle overflow-hidden">
+                                                        <img src="./images/avatar-4.png" alt="Avatar Image" class="size-7">
+                                                    </span>                                                
+                                                    <p class="fw-semibold mb-0">John Smith</p>                                                
+                                                </a>
+                                            </td>
+                                            <td>45</td>
+                                            <td>Male</td>
+                                            <td>+91 5455-1020</td>
+                                            <td>Diabetes</td>
+                                            <td>Ward B-03</td>
+                                            <td>Dr. James Parker</td>
+                                            <td><span class="badge badge-label-warning">Under Observation</span></td>
+                                            <td>2025-09-05</td>
+                                            <td class="text-end">
+                                                <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-edit-2-outline"><g data-name="Layer 2"><g data-name="edit-2"><rect width="24" height="24" opacity="0"></rect><path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"></path><path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6zm-8.9 8.91L12 7.32l2.7 2.7-5.6 5.6-3 .28z"></path></g></g></svg></button>
+                                                <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-trash-2-outline"><g data-name="Layer 2"><g data-name="trash-2"><rect width="24" height="24" opacity="0"></rect><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2zM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12z"></path><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path><path d="M15 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path></g></g></svg></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#!" class="text-muted">#PAT-103</a></td>
+                                            <td>
+                                                <a href="apps-patient-overview.html" class="d-flex align-items-center gap-2 text-body">                                               
+                                                    <span class="avatar avatar-sm avatar-circle overflow-hidden">
+                                                        <img src="./images/avatar-5.png" alt="Avatar Image" class="size-7">
+                                                    </span>                                                
+                                                    <p class="fw-semibold mb-0">Sophia Brown</p>                                                
+                                                </a>
+                                            </td>
+                                            <td>34</td>
+                                            <td>Female</td>
+                                            <td>+91 5455-1030</td>
+                                            <td>Fracture</td>
+                                            <td>Ward C-07</td>
+                                            <td>Dr. Emily Clark</td>
+                                            <td><span class="badge badge-label-info">Recovering</span></td>
+                                            <td>2025-09-07</td>
+                                            <td class="text-end">
+                                                <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-edit-2-outline"><g data-name="Layer 2"><g data-name="edit-2"><rect width="24" height="24" opacity="0"></rect><path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"></path><path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6zm-8.9 8.91L12 7.32l2.7 2.7-5.6 5.6-3 .28z"></path></g></g></svg></button>
+                                                <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-trash-2-outline"><g data-name="Layer 2"><g data-name="trash-2"><rect width="24" height="24" opacity="0"></rect><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2zM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12z"></path><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path><path d="M15 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path></g></g></svg></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#!" class="text-muted">#PAT-104</a></td>
+                                            <td>
+                                                <a href="apps-patient-overview.html" class="d-flex align-items-center gap-2 text-body">                                               
+                                                    <span class="avatar avatar-sm avatar-circle overflow-hidden">
+                                                        <img src="./images/avatar-6.png" alt="Avatar Image" class="size-7">
+                                                    </span>                                                
+                                                    <p class="fw-semibold mb-0">Michael Johnson</p>                                                
+                                                </a>
+                                            </td>
+                                            <td>50</td>
+                                            <td>Male</td>
+                                            <td>+91 5455-1040</td>
+                                            <td>Hypertension</td>
+                                            <td>Ward D-15</td>
+                                            <td>Dr. Daniel Adams</td>
+                                            <td><span class="badge badge-label-danger">Critical</span></td>
+                                            <td>2025-09-08</td>
+                                            <td class="text-end">
+                                                <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-edit-2-outline"><g data-name="Layer 2"><g data-name="edit-2"><rect width="24" height="24" opacity="0"></rect><path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"></path><path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6zm-8.9 8.91L12 7.32l2.7 2.7-5.6 5.6-3 .28z"></path></g></g></svg></button>
+                                                <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-trash-2-outline"><g data-name="Layer 2"><g data-name="trash-2"><rect width="24" height="24" opacity="0"></rect><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2zM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12z"></path><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path><path d="M15 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path></g></g></svg></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#!" class="text-muted">#PAT-105</a></td>
+                                            <td>
+                                                <a href="apps-patient-overview.html" class="d-flex align-items-center gap-2 text-body">                                               
+                                                    <span class="avatar avatar-sm avatar-circle overflow-hidden">
+                                                        <img src="./images/avatar-7.png" alt="Avatar Image" class="size-7">
+                                                    </span>                                                
+                                                    <p class="fw-semibold mb-0">Olivia Davis</p>                                                
+                                                </a>
+                                            </td>
+                                            <td>30</td>
+                                            <td>Female</td>
+                                            <td>+91 5455-1050</td>
+                                            <td>Flu</td>
+                                            <td>Ward E-20</td>
+                                            <td>Dr. William Scott</td>
+                                            <td><span class="badge badge-label-success">Stable</span></td>
+                                            <td>2025-09-09</td>
+                                            <td class="text-end">
+                                                <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-edit-2-outline"><g data-name="Layer 2"><g data-name="edit-2"><rect width="24" height="24" opacity="0"></rect><path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"></path><path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6zm-8.9 8.91L12 7.32l2.7 2.7-5.6 5.6-3 .28z"></path></g></g></svg></button>
+                                                <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-trash-2-outline"><g data-name="Layer 2"><g data-name="trash-2"><rect width="24" height="24" opacity="0"></rect><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2zM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12z"></path><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path><path d="M15 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path></g></g></svg></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#!" class="text-muted">#PAT-106</a></td>
+                                            <td>
+                                                <a href="apps-patient-overview.html" class="d-flex align-items-center gap-2 text-body">                                               
+                                                    <span class="avatar avatar-sm avatar-circle overflow-hidden">
+                                                        <img src="./images/avatar-8.png" alt="Avatar Image" class="size-7">
+                                                    </span>                                                
+                                                    <p class="fw-semibold mb-0">Liam Martinez</p>                                                
+                                                </a>
+                                            </td>
+                                            <td>40</td>
+                                            <td>Male</td>
+                                            <td>+91 5455-1060</td>
+                                            <td>Pneumonia</td>
+                                            <td>Ward F-09</td>
+                                            <td>Dr. Henry Brown</td>
+                                            <td><span class="badge badge-label-warning">Under Observation</span></td>
+                                            <td>2025-09-09</td>
+                                            <td class="text-end">
+                                                <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-edit-2-outline"><g data-name="Layer 2"><g data-name="edit-2"><rect width="24" height="24" opacity="0"></rect><path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"></path><path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6zm-8.9 8.91L12 7.32l2.7 2.7-5.6 5.6-3 .28z"></path></g></g></svg></button>
+                                                <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-trash-2-outline"><g data-name="Layer 2"><g data-name="trash-2"><rect width="24" height="24" opacity="0"></rect><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2zM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12z"></path><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path><path d="M15 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path></g></g></svg></button>
+                                            </td>
+                                        </tr>  
+                                        <tr>
+                                            <td><a href="#!" class="text-muted">#PAT-107</a></td>
+                                            <td>
+                                                <a href="apps-patient-overview.html" class="d-flex align-items-center gap-2 text-body">                                               
+                                                    <span class="avatar avatar-sm avatar-circle overflow-hidden">
+                                                        <img src="./images/avatar-9.png" alt="Avatar Image" class="size-7">
+                                                    </span>                                                
+                                                    <p class="fw-semibold mb-0">Ethan White</p>                                                
+                                                </a>
+                                            </td>
+                                            <td>29</td>
+                                            <td>Female</td>
+                                            <td>+91 5455-1070</td>
+                                            <td>Migraine</td>
+                                            <td>Ward G-11</td>
+                                            <td>Dr. Nancy Allen</td>
+                                            <td><span class="badge badge-label-success">Stable</span></td>
+                                            <td>2025-09-09</td>
+                                            <td class="text-end">
+                                                <button type="button" class="btn btn-sm btn-label-primary btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-edit-2-outline"><g data-name="Layer 2"><g data-name="edit-2"><rect width="24" height="24" opacity="0"></rect><path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"></path><path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6zm-8.9 8.91L12 7.32l2.7 2.7-5.6 5.6-3 .28z"></path></g></g></svg></button>
+                                                <button type="button" class="btn btn-sm btn-label-danger btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-trash-2-outline"><g data-name="Layer 2"><g data-name="trash-2"><rect width="24" height="24" opacity="0"></rect><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2zM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12z"></path><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path><path d="M15 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path></g></g></svg></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#!" class="text-muted">#PAT-108</a></td>
+                                            <td>
+                                                <a href="apps-patient-overview.html" class="d-flex align-items-center gap-2 text-body">                                               
+                                                    <span class="avatar avatar-sm avatar-circle overflow-hidden">
+                                                        <img src="./images/avatar-10.png" alt="Avatar Image" class="size-7">
+                                                    </span>                                                
+                                                    <p class="fw-semibold mb-0">Isabella Taylor</p>                                                
+                                                </a>
+                                            </td>
+                                            <td>26</td>
+                                            <td>Male</td>
+                                            <td>+91 5455-1080</td>
+                                            <td>Allergy</td>
+                                            <td>Ward H-14</td>
+                                            <td>Dr. Robert King</td>
+                                            <td><span class="badge badge-label-info">Recovering</span></td>
+                                            <td>2025-09-08</td>
+                                            <td class="text-end">
+                                                <button type="button" class="btn btn-sm btn-label-primary btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-edit-2-outline"><g data-name="Layer 2"><g data-name="edit-2"><rect width="24" height="24" opacity="0"></rect><path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"></path><path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6zm-8.9 8.91L12 7.32l2.7 2.7-5.6 5.6-3 .28z"></path></g></g></svg></button>
+                                                <button type="button" class="btn btn-sm btn-label-danger btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-trash-2-outline"><g data-name="Layer 2"><g data-name="trash-2"><rect width="24" height="24" opacity="0"></rect><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2zM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12z"></path><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path><path d="M15 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path></g></g></svg></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#!" class="text-muted">#PAT-109</a></td>
+                                            <td>
+                                                <a href="apps-patient-overview.html" class="d-flex align-items-center gap-2 text-body">                                               
+                                                    <span class="avatar avatar-sm avatar-circle overflow-hidden">
+                                                        <img src="./images/avatar-11.png" alt="Avatar Image" class="size-7">
+                                                    </span>                                                
+                                                    <p class="fw-semibold mb-0">James Anderson</p>                                                
+                                                </a>
+                                            </td>
+                                            <td>38</td>
+                                            <td>Female</td>
+                                            <td>+91 5455-1090</td>
+                                            <td>Covid-19</td>
+                                            <td>Ward I-18</td>
+                                            <td>Dr. Laura Green</td>
+                                            <td><span class="badge badge-label-danger">Critical</span></td>
+                                            <td>2025-09-07</td>
+                                            <td class="text-end">
+                                                <button type="button" class="btn btn-sm btn-label-primary btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-edit-2-outline"><g data-name="Layer 2"><g data-name="edit-2"><rect width="24" height="24" opacity="0"></rect><path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"></path><path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6zm-8.9 8.91L12 7.32l2.7 2.7-5.6 5.6-3 .28z"></path></g></g></svg></button>
+                                                <button type="button" class="btn btn-sm btn-label-danger btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-trash-2-outline"><g data-name="Layer 2"><g data-name="trash-2"><rect width="24" height="24" opacity="0"></rect><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2zM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12z"></path><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path><path d="M15 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path></g></g></svg></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#!" class="text-muted">#PAT-110</a></td>
+                                            <td>
+                                                <a href="apps-patient-overview.html" class="d-flex align-items-center gap-2 text-body">                                               
+                                                    <span class="avatar avatar-sm avatar-circle overflow-hidden">
+                                                        <img src="./images/avatar-3.png" alt="Avatar Image" class="size-7">
+                                                    </span>                                                
+                                                    <p class="fw-semibold mb-0">Mia Thomas</p>                                                
+                                                </a>
+                                            </td>
+                                            <td>32</td>
+                                            <td>Male</td>
+                                            <td>+91 5455-1100</td>
+                                            <td>Skin Infection</td>
+                                            <td>Ward J-05</td>
+                                            <td>Dr. Kevin Hall</td>
+                                            <td><span class="badge badge-label-warning">Under Observation</span></td>
+                                            <td>2025-09-06</td>
+                                            <td class="text-end">
+                                                <button type="button" class="btn btn-sm btn-label-primary btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-edit-2-outline"><g data-name="Layer 2"><g data-name="edit-2"><rect width="24" height="24" opacity="0"></rect><path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"></path><path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6zm-8.9 8.91L12 7.32l2.7 2.7-5.6 5.6-3 .28z"></path></g></g></svg></button>
+                                                <button type="button" class="btn btn-sm btn-label-danger btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-trash-2-outline"><g data-name="Layer 2"><g data-name="trash-2"><rect width="24" height="24" opacity="0"></rect><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2zM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12z"></path><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path><path d="M15 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path></g></g></svg></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#!" class="text-muted">#PAT-111</a></td>
+                                            <td>
+                                                <a href="apps-patient-overview.html" class="d-flex align-items-center gap-2 text-body">                                               
+                                                    <span class="avatar avatar-sm avatar-circle overflow-hidden">
+                                                        <img src="./images/avatar-2.png" alt="Avatar Image" class="size-7">
+                                                    </span>                                                
+                                                    <p class="fw-semibold mb-0">Alexander Harris</p>                                                
+                                                </a>
+                                            </td>
+                                            <td>55</td>
+                                            <td>Female</td>
+                                            <td>+91 5455-1110</td>
+                                            <td>Heart Disease</td>
+                                            <td>Ward K-02</td>
+                                            <td>Dr. Rachel Lopez</td>
+                                            <td><span class="badge badge-label-danger">Critical</span></td>
+                                            <td>2025-09-05</td>
+                                            <td class="text-end">
+                                                <button type="button" class="btn btn-sm btn-label-primary btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-edit-2-outline"><g data-name="Layer 2"><g data-name="edit-2"><rect width="24" height="24" opacity="0"></rect><path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"></path><path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6zm-8.9 8.91L12 7.32l2.7 2.7-5.6 5.6-3 .28z"></path></g></g></svg></button>
+                                                <button type="button" class="btn btn-sm btn-label-danger btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-trash-2-outline"><g data-name="Layer 2"><g data-name="trash-2"><rect width="24" height="24" opacity="0"></rect><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2zM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12z"></path><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path><path d="M15 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path></g></g></svg></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#!" class="text-muted">#PAT-112</a></td>
+                                            <td>
+                                                <a href="apps-patient-overview.html" class="d-flex align-items-center gap-2 text-body">                                               
+                                                    <span class="avatar avatar-sm avatar-circle overflow-hidden">
+                                                        <img src="./images/avatar-1.png" alt="Avatar Image" class="size-7">
+                                                    </span>                                                
+                                                    <p class="fw-semibold mb-0">Charlotte Robinson</p>                                                
+                                                </a>
+                                            </td>
+                                            <td>47</td>
+                                            <td>Male</td>
+                                            <td>+91 5455-1120</td>
+                                            <td>Arthritis</td>
+                                            <td>Ward L-06</td>
+                                            <td>Dr. Brian Young</td>
+                                            <td><span class="badge badge-label-info">Recovering</span></td>
+                                            <td>2025-09-04</td>
+                                            <td class="text-end">
+                                                <button type="button" class="btn btn-sm btn-label-primary btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-edit-2-outline"><g data-name="Layer 2"><g data-name="edit-2"><rect width="24" height="24" opacity="0"></rect><path d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z"></path><path d="M5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4L18 6.73l-2 1.95L13.32 6zm-8.9 8.91L12 7.32l2.7 2.7-5.6 5.6-3 .28z"></path></g></g></svg></button>
+                                                <button type="button" class="btn btn-sm btn-label-danger btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-trash-2-outline"><g data-name="Layer 2"><g data-name="trash-2"><rect width="24" height="24" opacity="0"></rect><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2zM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4zM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12z"></path><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path><path d="M15 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1z"></path></g></g></svg></button>
+                                            </td>
+                                        </tr>                                                                                               
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-4 justify-content-between mt-3 flex-wrap">
+                                <div>
+                                    <p class="mb-0 text-muted">Showing <span class="fw-semibold text-body">1</span> - <span class="fw-semibold text-body">10</span> of <span class="fw-semibold text-body">50</span> Results</p>
+                                </div>
+                                <ul class="pagination pagination-arrow mb-0 ms-auto">
+                                <li class="page-item"><a class="page-link page-prev" href="#!"><i class="mdi mdi-chevron-left align-middle pagination-left"></i><i class="mdi mdi-chevron-right align-middle pagination-right"></i><span class="visually-hidden">Previous</span></a></li>
+                                    <li class="page-item"><a class="page-link active" href="#!">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#!">4</a></li>
+                                <li class="page-item"><a class="page-link page-next" href="#!"><i class="mdi mdi-chevron-right pagination-right align-middle"></i><i class="mdi mdi-chevron-left pagination-left align-middle"></i><span class="visually-hidden">Next</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div data-layout-include="layout/footer.html"></div>
+
+        </div>
+    </div>
+
+    <div data-layout-include="layout/rightbar.html"></div>
+
+    <div data-layout-include="layout/switcher.html"></div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/metisMenu.min.js"></script>
+    <script src="./js/simplebar.min.js"></script>
+    <script src="./js/eva.min.js"></script>
+    <script src="./js/scroll-top.init.js"></script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/apexcharts.min.js"></script>
+    <script src="./js/layout-loader.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
