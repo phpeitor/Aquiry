@@ -1,0 +1,182 @@
+<div class="custom-setting bg-primary pe-0 d-md-flex flex-column rounded-start-3 d-none">
+    <button type="button" class="btn btn-wide border-0 text-white fs-20 avatar-md" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight" aria-label="Toggle Switcher">
+        <i class="mdi mdi-cog-outline align-middle"></i>
+    </button>
+    <button type="button" class="btn btn-wide border-0 text-white fs-20 avatar-md" data-toggle="fullscreen"
+        aria-label="Toggle Fullscreen">
+        <i class="mdi mdi-arrow-expand-all align-middle"></i>
+    </button>
+    <button type="button" class="btn btn-wide border-0 text-white fs-14 avatar-md" id="layout-dir-btn"
+        aria-label="Toggle RTL/LTR">
+        <span>RTL</span>
+    </button>
+</div>
+
+<div class="offcanvas offcanvas-end" id="offcanvas-rightsidabar">
+    <div class="offcanvas-header">
+        <div>
+            <h5 class="offcanvas-title" id="offcanvasLabel">Recent Activities</h5>
+            <p class="text-muted mb-0">Stay updated with your store</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p class="mb-3 mt-1 fs-14">Today's Overview</p>
+        <div class="row g-3 mb-5">
+            <div class="col-6">
+                <div
+                    class="px-4 py-3 bg-light bg-opacity-40 rounded d-flex justify-content-between align-items-start">
+                    <div>
+                        <p class="text-muted mb-4">Orders</p>
+                        <h5 class="mb-0 fw-medium">23</h5>
+                    </div>
+                    <span class="text-success fw-medium">+12%</span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div
+                    class="px-4 py-3 bg-light bg-opacity-40 rounded d-flex justify-content-between align-items-start">
+                    <div>
+                        <p class="text-muted mb-4">Revenue</p>
+                        <h5 class="mb-0 fw-medium">$8,547</h5>
+                    </div>
+                    <span class="text-success fw-medium">+8%</span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div
+                    class="px-4 py-3 bg-light bg-opacity-40 rounded d-flex justify-content-between align-items-start">
+                    <div>
+                        <p class="text-muted mb-4">Pending</p>
+                        <h5 class="mb-0 fw-medium">7</h5>
+                    </div>
+                    <span class="text-danger fw-medium">-3%</span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div
+                    class="px-4 py-3 bg-light bg-opacity-40 rounded d-flex justify-content-between align-items-start">
+                    <div>
+                        <p class="text-muted mb-4">Low Stock</p>
+                        <h5 class="mb-0 fw-medium">12</h5>
+                    </div>
+                    <span class="text-success fw-medium">+2%</span>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <p class="mb-0 fs-14">Activities</p>
+            <a href="#!" class="text-muted"><i class="mdi mdi-refresh me-1"></i>Refresh</a>
+        </div>
+        <div class="timeline timeline-timed timeline-icon activity-timeline">
+            <div
+                class="timeline-item d-flex justify-content-between align-items-center gap-lg-4 flex-wrap flex-md-nowrap">
+                <div>
+                    <div class="timeline-pin">
+                        <i data-eva="shopping-cart-outline" class="size-4"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h6 class="rich-list-title mb-2">New Order Received</h6>
+                        <span class="rich-list-paragraph">
+                            Order <span class="text-body">#12458</span> from <span class="text-body">John
+                                Smith</span> –
+                            $245.99
+                        </span>
+                    </div>
+                </div>
+                <p class="text-muted mb-0 flex-shrink-0">2 mins ago</p>
+            </div>
+            <div
+                class="timeline-item d-flex justify-content-between align-items-center gap-lg-4 flex-wrap flex-md-nowrap">
+                <div>
+                    <div class="timeline-pin">
+                        <i data-eva="cube-outline" class="size-4"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h6 class="rich-list-title mb-2">54 Products Arrived</h6>
+                        <span class="rich-list-paragraph">New inventory added to warehouse</span>
+                    </div>
+                </div>
+                <p class="text-muted mb-0 flex-shrink-0">15 mins ago</p>
+            </div>
+            <div
+                class="timeline-item d-flex justify-content-between align-items-center gap-lg-4 flex-wrap flex-md-nowrap">
+                <div>
+                    <div class="timeline-pin">
+                        <i data-eva="person-add-outline" class="size-4"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h6 class="rich-list-title mb-2">New Customer Registration</h6>
+                        <span class="rich-list-paragraph">
+                            <span class="text-body">Sarah Johnson</span> joined as premium member
+                        </span>
+                    </div>
+                </div>
+                <p class="text-muted mb-0 flex-shrink-0">1 hr ago</p>
+            </div>
+            <div
+                class="timeline-item d-flex justify-content-between align-items-center gap-lg-4 flex-wrap flex-md-nowrap">
+                <div>
+                    <div class="timeline-pin">
+                        <i data-eva="alert-triangle-outline" class="size-4"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h6 class="rich-list-title mb-2">Low Stock Alert</h6>
+                        <span class="rich-list-paragraph">
+                            <span class="text-body">iPhone 15 Pro</span> has only 5 units left
+                        </span>
+                    </div>
+                </div>
+                <p class="text-muted mb-0 flex-shrink-0">2 hrs ago</p>
+            </div>
+            <div
+                class="timeline-item d-flex justify-content-between align-items-center gap-lg-4 flex-wrap flex-md-nowrap">
+                <div>
+                    <div class="timeline-pin">
+                        <i data-eva="trending-up" class="size-4"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h6 class="rich-list-title mb-2">Sales Milestone Reached</h6>
+                        <span class="rich-list-paragraph">Daily target of <span class="text-body">$10,000</span>
+                            achieved</span>
+                    </div>
+                </div>
+                <p class="text-muted mb-0 flex-shrink-0">3 hrs ago</p>
+            </div>
+            <div
+                class="timeline-item d-flex justify-content-between align-items-center gap-lg-4 flex-wrap flex-md-nowrap">
+                <div>
+                    <div class="timeline-pin">
+                        <i data-eva="star-outline" class="size-4"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h6 class="rich-list-title mb-2">New Product Review</h6>
+                        <span class="rich-list-paragraph">5-star review on <span class="text-body">MacBook Pro
+                                M3</span></span>
+                    </div>
+                </div>
+                <p class="text-muted mb-0 flex-shrink-0">4 hrs ago</p>
+            </div>
+            <div
+                class="timeline-item d-flex justify-content-between align-items-center gap-lg-4 flex-wrap flex-md-nowrap">
+                <div>
+                    <div class="timeline-pin">
+                        <i data-eva="refresh" class="size-4"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h6 class="rich-list-title mb-2">Return Processed</h6>
+                        <span class="rich-list-paragraph">
+                            Refund of <span class="text-body">$89.99</span> completed for Order #12445
+                        </span>
+                    </div>
+                </div>
+                <p class="text-muted mb-0 flex-shrink-0">5 hrs ago</p>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas-footer pt-0 p-4 d-flex align-items-center gap-2">
+        <a href="#!" class="btn btn-primary w-100">View All Activities</a>
+        <a href="#!" class="btn btn-light flex-shrink-0" data-bs-dismiss="offcanvas">Cancel</a>
+    </div>
+</div>

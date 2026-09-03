@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aquiry </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="Bootstrap 13 in 1 Admin & Dashboard Template" name="description">
+    <meta content="Codebucks" name="author">
+    <link rel="shortcut icon" href="./images/logo-sm.png">
+    <link href="./css/select2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/simplebar.min.css">
+    <link href="./css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <link href="./css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="layout-wrapper">
+
+        <!--- layout/header.html -->
+
+        <!--- layout/sidebar-menu.html -->
+        
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+        
+        <!--- layout/sidebar-menu.html -->
+
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Ecommerce</h4>
+                                <nav aria-label="breadcrumb" class="page-title-right">
+                                    <ol class="breadcrumb border-0">
+                                        <li class="breadcrumb-item">
+                                            <a href="#!">
+                                                <i class="mdi mdi-home-outline fs-18 lh-1"></i>
+                                                <span class="visually-hidden">Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a href="#!">Dashboard</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Ecommerce</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+                    <div class="row">
+                        <div class="col-xl-8 col-xxl-9">
+                            <div class="row">
+                                <div class="col-xxl-5">
+                                    <div class="card overflow-hidden card-h-100">
+                                        <div class="card-body d-flex flex-column h-100 justify-content-between">
+                                            <div>
+                                                <h4 class="fw-medium mb-4">Welcome Back, Charlie!</h4>
+                                                <p class="mb-6 text-muted fs-14 lh-base max-w-96">Here’s a quick look at
+                                                    your store’s performance today.Stay on top of your sales, orders,
+                                                    and customers.</p>
+                                            </div>
+                                            <div>
+                                                <h3 class="fw-normal mb-2">$25,56k</h3>
+                                                <p class="text-muted fs-14 mb-6">Monthly Sales <span
+                                                        class="text-success me-1"><i data-eva="trending-up"
+                                                            class="size-4 me-1"></i>5.2%</span></p>
+                                                <a href="#!" class="btn btn-primary">View Reports</a>
+                                            </div>
+                                            <img src="./images/welcome.png" alt="Welcome"
+                                                class="img-fluid position-absolute z-2 welcome-vector">
+                                            <div
+                                                class="position-absolute h-44 w-44 bg-primary me-16 bottom-0 end-0 rounded-circle blury-effect">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-7">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Sales Summary</h5>
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted dropdown-toggle"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                                    aria-label="more">Monthly</a>
+                                                <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Weekly</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Monthly</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Yearly</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="salesSummaryChart" data-colors='["var(--bs-primary)"]'
+                                                class="apex-charts" dir="ltr"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xxl-3">
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-start justify-content-between mb-6">
+                                                <div>
+                                                    <h6 class="mb-3">Total Sales</h6>
+                                                    <p class="text-muted mb-0"><span class="text-success me-1"><i
+                                                                data-eva="trending-up"
+                                                                class="size-4 me-1"></i>8.5%</span> vs last week</p>
+                                                </div>
+                                                <div
+                                                    class="position-relative d-inline-block avatar-progress progress-75">
+                                                    <svg class="position-absolute top-0 start-0 progress-svg">
+                                                        <circle class="progress-bg"></circle>
+                                                        <circle class="progress-circle stroke-info"></circle>
+                                                    </svg>
+                                                    <div class="avatar size-11 avatar-label-info avatar-circle">
+                                                        <i data-eva="shopping-bag-outline"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h4 class="mb-0 fw-medium"><span data-counter="35780"
+                                                        data-prefix="$"></span> <span
+                                                        class="small fw-normal text-muted">/weekly</span></h4>
+                                                <div class="dropdown">
+                                                    <a href="#!" class="text-muted" data-bs-toggle="dropdown"
+                                                        aria-label="more"><i data-eva="more-horizontal-outline"
+                                                            class="size-4"></i></a>
+                                                    <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="#!">Today</a></li>
+                                                        <li><a class="dropdown-item" href="#!">This Week</a></li>
+                                                        <li><a class="dropdown-item" href="#!">This Month</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xxl-3">
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-start justify-content-between mb-6">
+                                                <div>
+                                                    <h6 class="mb-3">Revenue</h6>
+                                                    <p class="text-muted mb-0"><span class="text-success me-1"><i
+                                                                data-eva="trending-up"
+                                                                class="size-4 me-1"></i>5.7%</span> vs last week</p>
+                                                </div>
+                                                <div
+                                                    class="position-relative d-inline-block avatar-progress progress-80">
+                                                    <svg class="position-absolute top-0 start-0 progress-svg">
+                                                        <circle class="progress-bg"></circle>
+                                                        <circle class="progress-circle stroke-success"></circle>
+                                                    </svg>
+                                                    <div class="avatar size-11 avatar-label-success avatar-circle">
+                                                        <i data-eva="credit-card-outline"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h4 class="mb-0 fw-medium"><span data-counter="2458"
+                                                        data-prefix="$"></span> <span
+                                                        class="small fw-normal text-muted">/weekly</span></h4>
+                                                <div class="dropdown">
+                                                    <a href="#!" class="text-muted" data-bs-toggle="dropdown"
+                                                        aria-label="more"><i data-eva="more-horizontal-outline"
+                                                            class="size-4"></i></a>
+                                                    <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="#!">Today</a></li>
+                                                        <li><a class="dropdown-item" href="#!">This Week</a></li>
+                                                        <li><a class="dropdown-item" href="#!">This Month</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xxl-3">
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-start justify-content-between mb-6">
+                                                <div>
+                                                    <h6 class="mb-3">Total Orders</h6>
+                                                    <p class="text-muted mb-0"><span class="text-danger me-1"><i
+                                                                data-eva="trending-down"
+                                                                class="size-4 me-1"></i>2.1%</span> vs last week</p>
+                                                </div>
+                                                <div
+                                                    class="position-relative d-inline-block avatar-progress progress-60">
+                                                    <svg class="position-absolute top-0 start-0 progress-svg">
+                                                        <circle class="progress-bg"></circle>
+                                                        <circle class="progress-circle stroke-warning"></circle>
+                                                    </svg>
+                                                    <div class="avatar size-11 avatar-label-warning avatar-circle">
+                                                        <i data-eva="shopping-cart-outline"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h4 class="mb-0 fw-medium"><span data-counter="1245"></span> <span
+                                                        class="small fw-normal text-muted">/weekly</span></h4>
+                                                <div class="dropdown">
+                                                    <a href="#!" class="text-muted" data-bs-toggle="dropdown"
+                                                        aria-label="more"><i data-eva="more-horizontal-outline"
+                                                            class="size-4"></i></a>
+                                                    <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="#!">Today</a></li>
+                                                        <li><a class="dropdown-item" href="#!">This Week</a></li>
+                                                        <li><a class="dropdown-item" href="#!">This Month</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xxl-3">
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-start justify-content-between mb-6">
+                                                <div>
+                                                    <h6 class="mb-3">New Customers</h6>
+                                                    <p class="text-muted mb-0"><span class="text-success me-1"><i
+                                                                data-eva="trending-up"
+                                                                class="size-4 me-1"></i>12%</span> vs last week</p>
+                                                </div>
+                                                <div
+                                                    class="position-relative d-inline-block avatar-progress progress-66">
+                                                    <svg class="position-absolute top-0 start-0 progress-svg">
+                                                        <circle class="progress-bg"></circle>
+                                                        <circle class="progress-circle stroke-danger"></circle>
+                                                    </svg>
+                                                    <div class="avatar size-11 avatar-label-danger avatar-circle">
+                                                        <i data-eva="people-outline"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h4 class="mb-0 fw-medium"><span data-counter="320"></span> <span
+                                                        class="small fw-normal text-muted">/weekly</span></h4>
+                                                <div class="dropdown">
+                                                    <a href="#!" class="text-muted" data-bs-toggle="dropdown"
+                                                        aria-label="more"><i data-eva="more-horizontal-outline"
+                                                            class="size-4"></i></a>
+                                                    <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                                        <li><a class="dropdown-item" href="#!">Today</a></li>
+                                                        <li><a class="dropdown-item" href="#!">This Week</a></li>
+                                                        <li><a class="dropdown-item" href="#!">This Month</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xxl-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Sales by Country</h5>
+                                            <a href="#!" class="text-muted">See All <i
+                                                    class="mdi mdi-arrow-right"></i></a>
+                                        </div>
+                                        <div class="card-body px-1 py-2">
+                                            <div class="px-1 mx-n1" data-simplebar style="max-height: 397px;">
+                                                <div class="table-responsive text-nowrap">
+                                                    <table class="table table-borderless align-middle mb-0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#!"
+                                                                        class="d-flex align-items-center gap-2 text-body">
+                                                                        <span
+                                                                            class="avatar size-7 avatar-circle overflow-hidden">
+                                                                            <img src="./images/us.svg"
+                                                                                alt="Country" class="img-fluid">
+                                                                        </span>
+                                                                        <p class="fw-semibold mb-0">United States</p>
+                                                                    </a>
+                                                                </td>
+                                                                <td>65%</td>
+                                                                <td>
+                                                                    <div
+                                                                        class="progress progress-sm w-24 ms-auto bg-primary-subtle">
+                                                                        <div class="progress-bar progress-bar-striped bg-primary"
+                                                                            style="width: 65%;"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#!"
+                                                                        class="d-flex align-items-center gap-2 text-body">
+                                                                        <span
+                                                                            class="avatar size-7 avatar-circle overflow-hidden">
+                                                                            <img src="./images/in.svg"
+                                                                                alt="Country" class="img-fluid">
+                                                                        </span>
+                                                                        <p class="fw-semibold mb-0">India</p>
+                                                                    </a>
+                                                                </td>
+                                                                <td>45%</td>
+                                                                <td>
+                                                                    <div
+                                                                        class="progress progress-sm w-24 ms-auto bg-warning-subtle">
+                                                                        <div class="progress-bar progress-bar-striped bg-warning"
+                                                                            style="width: 45%;"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#!"
+                                                                        class="d-flex align-items-center gap-2 text-body">
+                                                                        <span
+                                                                            class="avatar size-7 avatar-circle overflow-hidden">
+                                                                            <img src="./images/ca.svg"
+                                                                                alt="Country" class="img-fluid">
+                                                                        </span>
+                                                                        <p class="fw-semibold mb-0">Canada</p>
+                                                                    </a>
+                                                                </td>
+                                                                <td>74%</td>
+                                                                <td>
+                                                                    <div
+                                                                        class="progress progress-sm w-24 ms-auto bg-danger-subtle">
+                                                                        <div class="progress-bar progress-bar-striped bg-danger"
+                                                                            style="width: 74%;"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#!"
+                                                                        class="d-flex align-items-center gap-2 text-body">
+                                                                        <span
+                                                                            class="avatar size-7 avatar-circle overflow-hidden">
+                                                                            <img src="./images/au.svg"
+                                                                                alt="Country" class="img-fluid">
+                                                                        </span>
+                                                                        <p class="fw-semibold mb-0">Australia</p>
+                                                                    </a>
+                                                                </td>
+                                                                <td>56%</td>
+                                                                <td>
+                                                                    <div
+                                                                        class="progress progress-sm w-24 ms-auto bg-info-subtle">
+                                                                        <div class="progress-bar progress-bar-striped bg-info"
+                                                                            style="width: 56%;"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#!"
+                                                                        class="d-flex align-items-center gap-2 text-body">
+                                                                        <span
+                                                                            class="avatar size-7 avatar-circle overflow-hidden">
+                                                                            <img src="./images/de.svg"
+                                                                                alt="Country" class="img-fluid">
+                                                                        </span>
+                                                                        <p class="fw-semibold mb-0">Germany</p>
+                                                                    </a>
+                                                                </td>
+                                                                <td>48%</td>
+                                                                <td>
+                                                                    <div
+                                                                        class="progress progress-sm w-24 ms-auto bg-secondary-subtle">
+                                                                        <div class="progress-bar progress-bar-striped bg-secondary"
+                                                                            style="width: 48%;"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#!"
+                                                                        class="d-flex align-items-center gap-2 text-body">
+                                                                        <span
+                                                                            class="avatar size-7 avatar-circle overflow-hidden">
+                                                                            <img src="./images/fr.svg"
+                                                                                alt="Country" class="img-fluid">
+                                                                        </span>
+                                                                        <p class="fw-semibold mb-0">France</p>
+                                                                    </a>
+                                                                </td>
+                                                                <td>80%</td>
+                                                                <td>
+                                                                    <div
+                                                                        class="progress progress-sm w-24 ms-auto bg-success-subtle">
+                                                                        <div class="progress-bar progress-bar-striped bg-success"
+                                                                            style="width: 80%;"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#!"
+                                                                        class="d-flex align-items-center gap-2 text-body">
+                                                                        <span
+                                                                            class="avatar size-7 avatar-circle overflow-hidden">
+                                                                            <img src="./images/gb.svg"
+                                                                                alt="Country" class="img-fluid">
+                                                                        </span>
+                                                                        <p class="fw-semibold mb-0">United Kingdom</p>
+                                                                    </a>
+                                                                </td>
+                                                                <td>54%</td>
+                                                                <td>
+                                                                    <div
+                                                                        class="progress progress-sm w-24 ms-auto bg-danger-subtle">
+                                                                        <div class="progress-bar progress-bar-striped bg-danger"
+                                                                            style="width: 54%;"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#!"
+                                                                        class="d-flex align-items-center gap-2 text-body">
+                                                                        <span
+                                                                            class="avatar size-7 avatar-circle overflow-hidden">
+                                                                            <img src="./images/it.svg"
+                                                                                alt="Country" class="img-fluid">
+                                                                        </span>
+                                                                        <p class="fw-semibold mb-0">Italy</p>
+                                                                    </a>
+                                                                </td>
+                                                                <td>64%</td>
+                                                                <td>
+                                                                    <div
+                                                                        class="progress progress-sm w-24 ms-auto bg-info-subtle">
+                                                                        <div class="progress-bar progress-bar-striped bg-info"
+                                                                            style="width: 64%;"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xxl-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Top Products</h5>
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted dropdown-toggle"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                                    aria-label="more">Weekly</a>
+                                                <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Weekly</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Monthly</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Yearly</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="rich-list px-4 mx-n4" data-simplebar style="max-height: 381px;">
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm bg-dark-subtle">
+                                                            <img src="./images/buds.png"
+                                                                alt="Wireless Earbuds" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="apps-product-overview.html"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Wireless
+                                                            Earbuds</a>
+                                                        <span class="rich-list-subtitle">Electronics - 1,240 Units
+                                                            Sold</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$24,800</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm bg-warning-subtle">
+                                                            <img src="./images/honey.png"
+                                                                alt="Running Shoes" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="apps-product-overview.html"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Organic
+                                                            Honey</a>
+                                                        <span class="rich-list-subtitle">Grocery - 1,520 Units
+                                                            Sold</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$91,200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm bg-info-subtle">
+                                                            <img src="./images/laptop.png"
+                                                                alt="Gaming Laptop" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="apps-product-overview.html"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Gaming
+                                                            Laptop</a>
+                                                        <span class="rich-list-subtitle">Electronics - 750 Units
+                                                            Sold</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$375,000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm bg-secondary-subtle">
+                                                            <img src="./images/jacket.png"
+                                                                alt="iPhone 15 Pro" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="apps-product-overview.html"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Leather
+                                                            Jacket</a>
+                                                        <span class="rich-list-subtitle">Clothing - 1,100 Units
+                                                            Sold</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$1,320,000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm bg-danger-subtle">
+                                                            <img src="./images/product-4.png"
+                                                                alt="Hydrating Beauty Cream" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="apps-product-overview.html"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Makup
+                                                            Set</a>
+                                                        <span class="rich-list-subtitle">Beauty - 758 Units Sold</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$12,600</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm bg-light">
+                                                            <img src="./images/product-2.png"
+                                                                alt="Smart Watch" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="apps-product-overview.html"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Smart
+                                                            Watch</a>
+                                                        <span class="rich-list-subtitle">Electronics - 950 Units
+                                                            Sold</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$57,000</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm bg-primary-subtle">
+                                                            <img src="./images/product-1.png"
+                                                                alt="Hydrating Beauty Cream" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="apps-product-overview.html"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Hydrating
+                                                            Beauty Cream</a>
+                                                        <span class="rich-list-subtitle">Beauty - 620 Units Sold</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$18,600</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xxl-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Top Customers</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="rich-list px-4 mx-n4" data-simplebar style="max-height: 378px;">
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm avatar-circle">
+                                                            <img src="./images/avatar-2.png"
+                                                                alt="Alice Johnson" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Alice
+                                                            Johnson</a>
+                                                        <span class="rich-list-subtitle">Premium Customer - 45
+                                                            Orders</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$12,500</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm avatar-circle">
+                                                            <img src="./images/avatar-3.png"
+                                                                alt="Daniel Carter" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Daniel
+                                                            Carter</a>
+                                                        <span class="rich-list-subtitle">Regular Customer - 32
+                                                            Orders</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$8,200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm avatar-circle">
+                                                            <img src="./images/avatar-4.png"
+                                                                alt="Emma Wilson" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Emma
+                                                            Wilson</a>
+                                                        <span class="rich-list-subtitle">Premium Customer - 28
+                                                            Orders</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$9,750</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm avatar-circle">
+                                                            <img src="./images/avatar-5.png"
+                                                                alt="Liam Johnson" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Liam
+                                                            Johnson</a>
+                                                        <span class="rich-list-subtitle">Regular Customer - 20
+                                                            Orders</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$5,400</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm avatar-circle">
+                                                            <img src="./images/avatar-6.png"
+                                                                alt="Olivia Brown" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Olivia
+                                                            Brown</a>
+                                                        <span class="rich-list-subtitle">Premium Customer - 15
+                                                            Orders</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$3,900</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm avatar-circle">
+                                                            <img src="./images/avatar-7.png"
+                                                                alt="Daniel Carter" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Daniel
+                                                            Carter</a>
+                                                        <span class="rich-list-subtitle">Regular Customer - 32
+                                                            Orders</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$8,200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm avatar-circle">
+                                                            <img src="./images/avatar-8.png"
+                                                                alt="Emma Wilson" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Emma
+                                                            Wilson</a>
+                                                        <span class="rich-list-subtitle">Premium Customer - 28
+                                                            Orders</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$9,750</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm avatar-circle">
+                                                            <img src="./images/avatar-9.png"
+                                                                alt="Liam Johnson" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Liam
+                                                            Johnson</a>
+                                                        <span class="rich-list-subtitle">Regular Customer - 20
+                                                            Orders</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$5,400</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm avatar-circle">
+                                                            <img src="./images/avatar-10.png"
+                                                                alt="Olivia Brown" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Olivia
+                                                            Brown</a>
+                                                        <span class="rich-list-subtitle">Premium Customer - 15
+                                                            Orders</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$3,900</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-2">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm avatar-circle">
+                                                            <img src="./images/avatar-11.png"
+                                                                alt="Noah Smith" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!"
+                                                            class="rich-list-title text-body fs-14 fw-semibold">Noah
+                                                            Smith</a>
+                                                        <span class="rich-list-subtitle">Regular Customer - 12
+                                                            Orders</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="fw-semibold text-body">$2,750</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-xxl-3">
+                            <div class="card sticky-top">
+                                <div class="card-body">
+                                    <div class="mb-5">
+                                        <h5 class="card-title mb-2">Platforms :</h5>
+                                        <div class="rich-list">
+                                            <div class="rich-list-item px-0 py-2">
+                                                <div class="rich-list-prepend">
+                                                    <div class="avatar avatar-sm bg-light bg-opacity-70">
+                                                        <img src="./images/amazon.png"
+                                                            alt="Amazon" class="size-6">
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-content">
+                                                    <a href="#!"
+                                                        class="rich-list-title text-body fs-14 fw-semibold">Amazon</a>
+                                                    <span class="rich-list-subtitle">12.43k Orders · 45% Progress</span>
+                                                </div>
+                                                <div class="rich-list-append text-end">
+                                                    <span class="badge badge-label-success mb-1">Top Seller</span>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-item px-0 py-2">
+                                                <div class="rich-list-prepend">
+                                                    <div class="avatar avatar-sm bg-light bg-opacity-70">
+                                                        <img src="./images/eBay.png" alt="eBay"
+                                                            class="size-7">
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-content">
+                                                    <a href="#!"
+                                                        class="rich-list-title text-body fs-14 fw-semibold">eBay</a>
+                                                    <span class="rich-list-subtitle">8.92k Orders · 32% Progress</span>
+                                                </div>
+                                                <div class="rich-list-append text-end">
+                                                    <span class="badge badge-label-info mb-1">Trending</span>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-item px-0 py-2">
+                                                <div class="rich-list-prepend">
+                                                    <div class="avatar avatar-sm bg-light bg-opacity-70">
+                                                        <img src="./images/shopify.png"
+                                                            alt="Shopify" class="size-6">
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-content">
+                                                    <a href="#!"
+                                                        class="rich-list-title text-body fs-14 fw-semibold">Shopify</a>
+                                                    <span class="rich-list-subtitle">6.14k Orders · 25% Progress</span>
+                                                </div>
+                                                <div class="rich-list-append text-end">
+                                                    <span class="badge badge-label-warning mb-1">Fast Growth</span>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-item px-0 py-2">
+                                                <div class="rich-list-prepend">
+                                                    <div class="avatar avatar-sm bg-light bg-opacity-70">
+                                                        <img src="./images/flipkart.png"
+                                                            alt="Flipkart" class="size-6">
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-content">
+                                                    <a href="#!"
+                                                        class="rich-list-title text-body fs-14 fw-semibold">Flipkart</a>
+                                                    <span class="rich-list-subtitle">4.85k Orders · 18% Progress</span>
+                                                </div>
+                                                <div class="rich-list-append text-end">
+                                                    <span class="badge badge-label-primary mb-1">Growing</span>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-item px-0 py-2">
+                                                <div class="rich-list-prepend">
+                                                    <div class="avatar avatar-sm bg-light bg-opacity-70">
+                                                        <img src="./images/walmart.png"
+                                                            alt="Walmart" class="size-6">
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-content">
+                                                    <a href="#!"
+                                                        class="rich-list-title text-body fs-14 fw-semibold">Walmart</a>
+                                                    <span class="rich-list-subtitle">7.56k Orders · 28% Progress</span>
+                                                </div>
+                                                <div class="rich-list-append text-end">
+                                                    <span class="badge badge-label-danger mb-1">Low Stock</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-8">
+                                        <h5 class="card-title mb-4">Order Statistics :</h5>
+                                        <div class="d-flex align-items-start justify-content-between mb-5">
+                                            <div>
+                                                <h5 class="fw-medium mb-1">$71.5k</h5>
+                                                <p class="text-muted mb-0">Monthly Earnings</p>
+                                            </div>
+                                            <span class="text-muted"><i data-eva="trending-up"
+                                                    class="text-success me-1 size-4"></i>25% Increassed</span>
+                                        </div>
+                                        <div id="orderStatistics" data-colors='["var(--bs-primary)"]'
+                                            class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                    <div>
+                                        <h5 class="card-title mb-4">Quick Transiction :</h5>
+                                        <div class="mb-5">
+                                            <div class="d-flex flex-wrap align-items-center gap-2">
+                                                <a href="#!" class="avatar avatar-sm avatar-circle">
+                                                    <img src="./images/avatar-11.png" class="size-7"
+                                                        alt="Client">
+                                                </a>
+                                                <a href="#!" class="avatar avatar-sm avatar-circle">
+                                                    <img src="./images/avatar-12.png" class="size-7"
+                                                        alt="Client">
+                                                </a>
+                                                <a href="#!" class="avatar avatar-sm avatar-circle">
+                                                    <img src="./images/avatar-10.png" class="size-7"
+                                                        alt="Client">
+                                                </a>
+                                                <a href="#!" class="avatar avatar-sm avatar-circle">
+                                                    <img src="./images/avatar-9.png" class="size-7"
+                                                        alt="Client">
+                                                </a>
+                                                <a href="#!"
+                                                    class="avatar avatar-sm avatar-circle border d-flex justify-content-center align-items-center bg-light text-muted"
+                                                    aria-label="Add">
+                                                    <i data-eva="plus-outline" class="size-5"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="mb-5">
+                                            <label for="transferClient" class="form-label">Select Client</label>
+                                            <select id="transferClient" class="form-select">
+                                                <option selected disabled>Choose client...</option>
+                                                <option value="1">Eleanor Pena</option>
+                                                <option value="2">Marvin McKinney</option>
+                                                <option value="3">Courtney Henry</option>
+                                                <option value="4">Jerome Bell</option>
+                                                <option value="5">Devon Lane</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="btn btn-primary w-100">Transfer Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xxl-6">
+                            <div class="card">
+                                <div class="card-header border-bottom-0 pb-0">
+                                    <h5 class="card-title">Revenue Statistics</h5>
+                                    <div class="card-addon">
+                                        <a href="#!" class="btn btn-primary btn-sm"><i
+                                                class="mdi mdi-download-outline me-1"></i>Download</a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap gap-2 align-items-start justify-content-between">
+                                        <div class="d-flex flex-wrap gap-12 align-items-center mb-6">
+                                            <div>
+                                                <p class="mb-2 text-muted">Total Revenue</p>
+                                                <h5 class="mb-0 fw-medium">$85,24k</h5>
+                                            </div>
+                                            <div class="d-flex gap-4 align-items-center">
+                                                <div>
+                                                    <p class="mb-2 text-muted">Total Refunds</p>
+                                                    <h5 class="mb-0 fw-medium">$4,125</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nav nav-pills nav-group-tabs" id="contact-tab" role="tablist">
+                                            <a class="nav-item nav-link active" id="tab-active" data-bs-toggle="tab"
+                                                href="#pane-monthly" role="tab" aria-selected="false">Monthly</a>
+                                            <a class="nav-item nav-link" id="tab-inactive" data-bs-toggle="tab"
+                                                href="#pane-yearly" role="tab" aria-selected="false">Yearly</a>
+                                            <a class="nav-item nav-link" id="tab-all" data-bs-toggle="tab"
+                                                href="#pane-weekly" role="tab" aria-selected="true">Weekly</a>
+                                        </div>
+                                    </div>
+                                    <div id="teamProductivityChart"
+                                        data-colors='["var(--bs-success)", "var(--bs-primary)"]' class="apex-charts"
+                                        dir="ltr"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-xxl-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Top Selling Products</h5>
+                                    <div class="dropdown">
+                                        <a href="#!" class="text-muted dropdown-toggle" data-bs-toggle="dropdown"
+                                            aria-expanded="false" aria-label="more">Weekly</a>
+                                        <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#!">Weekly</a></li>
+                                            <li><a class="dropdown-item" href="#!">Monthly</a></li>
+                                            <li><a class="dropdown-item" href="#!">Yearly</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive text-nowrap">
+                                        <table class="table align-middle mb-0">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Product</th>
+                                                    <th>Category</th>
+                                                    <th>Status</th>
+                                                    <th>Units Sold</th>
+                                                    <th>Revenue</th>
+                                                    <th class="text-end">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="apps-product-overview.html"
+                                                            class="text-body fw-medium d-flex align-items-center gap-2">
+                                                            <img src="./images/buds.png"
+                                                                alt="Product" class="size-8 rounded">
+                                                            <span>Wireless Earbuds</span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Electronics</td>
+                                                    <td><span class="badge badge-label-success">In Stock</span></td>
+                                                    <td>1,240</td>
+                                                    <td>$24,800</td>
+                                                    <td class="text-end">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-success btn-icon"
+                                                            aria-label="View"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-primary btn-icon"
+                                                            aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-danger btn-icon"
+                                                            aria-label="Delete"><i
+                                                                data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="apps-product-overview.html"
+                                                            class="text-body fw-medium d-flex align-items-center gap-2">
+                                                            <img src="./images/product-2.png"
+                                                                alt="Product" class="size-8 rounded">
+                                                            <span>Smart Watch</span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Electronics</td>
+                                                    <td><span class="badge badge-label-warning">Low Stock</span></td>
+                                                    <td>980</td>
+                                                    <td>$49,000</td>
+                                                    <td class="text-end">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-success btn-icon"
+                                                            aria-label="View"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-primary btn-icon"
+                                                            aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-danger btn-icon"
+                                                            aria-label="Delete"><i
+                                                                data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="apps-product-overview.html"
+                                                            class="text-body fw-medium d-flex align-items-center gap-2">
+                                                            <img src="./images/iphone.png"
+                                                                alt="Product" class="size-8 rounded">
+                                                            <span>iPhone 15 Pro</span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Electronics</td>
+                                                    <td><span class="badge badge-label-success">In Stock</span></td>
+                                                    <td>1,100</td>
+                                                    <td>$1,320,000</td>
+                                                    <td class="text-end">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-success btn-icon"
+                                                            aria-label="View"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-primary btn-icon"
+                                                            aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-danger btn-icon"
+                                                            aria-label="Delete"><i
+                                                                data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="apps-product-overview.html"
+                                                            class="text-body fw-medium d-flex align-items-center gap-2">
+                                                            <img src="./images/product-3.png"
+                                                                alt="Product" class="size-8 rounded">
+                                                            <span>Luxury Perfume</span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Beauty</td>
+                                                    <td><span class="badge badge-label-warning">Low Stock</span></td>
+                                                    <td>780</td>
+                                                    <td>$46,800</td>
+                                                    <td class="text-end">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-success btn-icon"
+                                                            aria-label="View"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-primary btn-icon"
+                                                            aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-danger btn-icon"
+                                                            aria-label="Delete"><i
+                                                                data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="apps-product-overview.html"
+                                                            class="text-body fw-medium d-flex align-items-center gap-2">
+                                                            <img src="./images/product-1.png"
+                                                                alt="Product" class="size-8 rounded">
+                                                            <span>Hydrating Beauty Cream</span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Beauty</td>
+                                                    <td><span class="badge badge-label-success">In Stock</span></td>
+                                                    <td>620</td>
+                                                    <td>$18,600</td>
+                                                    <td class="text-end">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-success btn-icon"
+                                                            aria-label="View"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-primary btn-icon"
+                                                            aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-danger btn-icon"
+                                                            aria-label="Delete"><i
+                                                                data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center gap-4 justify-content-between mt-3">
+                                        <div>
+                                            <p class="mb-0 text-muted">Showing <span
+                                                    class="fw-semibold text-body">1</span> - <span
+                                                    class="fw-semibold text-body">4</span> of <span
+                                                    class="fw-semibold text-body">12</span> Products</p>
+                                        </div>
+                                        <ul class="pagination pagination-arrow mb-0 ms-auto">
+                                            <li class="page-item"><a class="page-link page-prev" href="#!"><i
+                                                        class="mdi mdi-chevron-left align-middle pagination-left"></i><i
+                                                        class="mdi mdi-chevron-right align-middle pagination-right"></i><span
+                                                        class="visually-hidden">Previous</span></a></li>
+                                            <li class="page-item"><a class="page-link active" href="#!">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                            <li class="page-item"><a class="page-link page-next" href="#!"><i
+                                                        class="mdi mdi-chevron-right pagination-right align-middle"></i><i
+                                                        class="mdi mdi-chevron-left pagination-left align-middle"></i><span
+                                                        class="visually-hidden">Next</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0">Recent Orders</h5>
+                                    <a href="#!" class="text-muted">See All <i class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive text-nowrap">
+                                        <table class="table align-middle mb-0">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Customer</th>
+                                                    <th>Product</th>
+                                                    <th>Status</th>
+                                                    <th>Date</th>
+                                                    <th class="text-end">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#!" class="d-flex align-items-center gap-2 text-body">
+                                                            <span class="avatar avatar-sm avatar-circle">
+                                                                <img src="./images/avatar-2.png"
+                                                                    alt="Customer Avatar" class="size-7">
+                                                            </span>
+                                                            <p class="fw-semibold mb-0">Alice Johnson</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="apps-product-overview.html"
+                                                            class="text-body fw-medium d-flex align-items-center gap-2">
+                                                            <img src="./images/buds.png"
+                                                                alt="Product" class="size-8 rounded">
+                                                            <span>Wireless Earbuds</span>
+                                                        </a>
+                                                    </td>
+                                                    <td><span class="badge badge-label-success">Delivered</span></td>
+                                                    <td>11 Sep 2025</td>
+                                                    <td class="text-end">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-primary btn-icon"
+                                                            aria-label="Accept"><i
+                                                                data-eva="checkmark-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-danger btn-icon"
+                                                            aria-label="Cancel"><i
+                                                                data-eva="close-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#!" class="d-flex align-items-center gap-2 text-body">
+                                                            <span class="avatar avatar-sm avatar-circle">
+                                                                <img src="./images/avatar-4.png"
+                                                                    alt="Customer Avatar" class="size-7">
+                                                            </span>
+                                                            <p class="fw-semibold mb-0">Michael Smith</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="apps-product-overview.html"
+                                                            class="text-body fw-medium d-flex align-items-center gap-2">
+                                                            <img src="./images/product-2.png"
+                                                                alt="Product" class="size-8 rounded">
+                                                            <span>Smart Watch</span>
+                                                        </a>
+                                                    </td>
+                                                    <td><span class="badge badge-label-warning">Pending</span></td>
+                                                    <td>10 Sep 2025</td>
+                                                    <td class="text-end">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-primary btn-icon"
+                                                            aria-label="Accept"><i
+                                                                data-eva="checkmark-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-danger btn-icon"
+                                                            aria-label="Cancel"><i
+                                                                data-eva="close-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#!" class="d-flex align-items-center gap-2 text-body">
+                                                            <span class="avatar avatar-sm avatar-circle">
+                                                                <img src="./images/avatar-6.png"
+                                                                    alt="Customer Avatar" class="size-7">
+                                                            </span>
+                                                            <p class="fw-semibold mb-0">Sophia Lee</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="apps-product-overview.html"
+                                                            class="text-body fw-medium d-flex align-items-center gap-2">
+                                                            <img src="./images/laptop.png"
+                                                                alt="Product" class="size-8 rounded">
+                                                            <span>Gaming Laptop</span>
+                                                        </a>
+                                                    </td>
+                                                    <td><span class="badge badge-label-danger">Cancelled</span></td>
+                                                    <td>09 Sep 2025</td>
+                                                    <td class="text-end">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-primary btn-icon"
+                                                            aria-label="Accept"><i
+                                                                data-eva="checkmark-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-danger btn-icon"
+                                                            aria-label="Cancel"><i
+                                                                data-eva="close-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#!" class="d-flex align-items-center gap-2 text-body">
+                                                            <span class="avatar avatar-sm avatar-circle">
+                                                                <img src="./images/avatar-9.png"
+                                                                    alt="Customer Avatar" class="size-7">
+                                                            </span>
+                                                            <p class="fw-semibold mb-0">Olivia Brown</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="apps-product-overview.html"
+                                                            class="text-body fw-medium d-flex align-items-center gap-2">
+                                                            <img src="./images/product-3.png"
+                                                                alt="Product" class="size-8 rounded">
+                                                            <span>Luxury Perfume</span>
+                                                        </a>
+                                                    </td>
+                                                    <td><span class="badge badge-label-success">Delivered</span></td>
+                                                    <td>06 Sep 2025</td>
+                                                    <td class="text-end">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-primary btn-icon"
+                                                            aria-label="Accept"><i
+                                                                data-eva="checkmark-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-danger btn-icon"
+                                                            aria-label="Cancel"><i
+                                                                data-eva="close-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#!" class="d-flex align-items-center gap-2 text-body">
+                                                            <span class="avatar avatar-sm avatar-circle">
+                                                                <img src="./images/avatar-10.png"
+                                                                    alt="Customer Avatar" class="size-7">
+                                                            </span>
+                                                            <p class="fw-semibold mb-0">Liam Johnson</p>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="apps-product-overview.html"
+                                                            class="text-body fw-medium d-flex align-items-center gap-2">
+                                                            <img src="./images/jacket.png"
+                                                                alt="Product" class="size-8 rounded">
+                                                            <span>Winter Jacket</span>
+                                                        </a>
+                                                    </td>
+                                                    <td><span class="badge badge-label-warning">Pending</span></td>
+                                                    <td>05 Sep 2025</td>
+                                                    <td class="text-end">
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-primary btn-icon"
+                                                            aria-label="Accept"><i
+                                                                data-eva="checkmark-outline"></i></button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-label-danger btn-icon"
+                                                            aria-label="Cancel"><i
+                                                                data-eva="close-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-xl-3 col-xxl-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-start justify-content-between mb-1">
+                                        <div>
+                                            <h4 class="fw-medium">$71.5k</h4>
+                                            <p class="text-muted fs-14 mb-0">Monthly Earnings</p>
+                                        </div>
+                                        <span class="text-success"><i data-eva="trending-up"
+                                                class="size-4 me-1"></i>3.5%</span>
+                                    </div>
+                                    <div id="monthlyEarningsChart" data-colors='["var(--bs-success)"]'
+                                        class="apex-charts" dir="ltr"></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-start justify-content-between mb-1">
+                                        <div>
+                                            <h4 class="fw-medium">185k</h4>
+                                            <p class="text-muted fs-14 mb-0">Weekly Orders</p>
+                                        </div>
+                                        <span class="text-danger"><i data-eva="trending-down"
+                                                class="size-4 me-1"></i>4.5%</span>
+                                    </div>
+                                    <div id="weeklyOrdersChart" data-colors='["rgba(var(--bs-danger-rgb),0.3)"]'
+                                        class="apex-charts mb-4" dir="ltr"></div>
+                                    <span class="text-muted">Last week <span
+                                            class="text-success fw-medium">+8.2%</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-xl-4 col-xxl-2">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Top Categories</h5>
+                                    <a href="#!" class="text-muted">See All <i class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="rich-list px-4 mx-n4" data-simplebar style="max-height: 375px;">
+                                        <div class="rich-list-item px-0">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-sm">
+                                                    <img src="./images/product-3.png"
+                                                        alt="Luxury Perfume" class="size-7">
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="apps-product-overview.html"
+                                                    class="rich-list-title text-body fs-14 fw-semibold mb-1">Luxury
+                                                    Perfume</a>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="text-muted"><i
+                                                            class="mdi mdi-star text-warning align-middle"></i>
+                                                        (4.6)</span>
+                                                    <h6 class="fw-medium fs-14 mb-0">$109</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-0">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-sm">
+                                                    <img src="./images/product-2.png"
+                                                        alt="Smart Watch" class="size-7">
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="apps-product-overview.html"
+                                                    class="rich-list-title text-body fs-14 fw-semibold mb-1">Smart
+                                                    Watch</a>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="text-muted"><i
+                                                            class="mdi mdi-star text-warning align-middle"></i>
+                                                        (4.3)</span>
+                                                    <h6 class="fw-medium fs-14 mb-0">$179</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-0">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-sm">
+                                                    <img src="./images/iphone.png" alt="Smartphone"
+                                                        class="size-7">
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="apps-product-overview.html"
+                                                    class="rich-list-title text-body fs-14 fw-semibold mb-1">Smartphone</a>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="text-muted"><i
+                                                            class="mdi mdi-star text-warning align-middle"></i>
+                                                        (4.7)</span>
+                                                    <h6 class="fw-medium fs-14 mb-0">$799</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-0">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-sm">
+                                                    <img src="./images/buds.png"
+                                                        alt="Wireless Earbuds" class="size-7">
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="apps-product-overview.html"
+                                                    class="rich-list-title text-body fs-14 fw-semibold mb-1">Wireless
+                                                    Earbuds</a>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="text-muted"><i
+                                                            class="mdi mdi-star text-warning align-middle"></i>
+                                                        (4.5)</span>
+                                                    <h6 class="fw-medium fs-14 mb-0">$99</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-0">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-sm">
+                                                    <img src="./images/jacket.png" alt="Jacket"
+                                                        class="size-7">
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="apps-product-overview.html"
+                                                    class="rich-list-title text-body fs-14 fw-semibold mb-1">Leather
+                                                    Jacket</a>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="text-muted"><i
+                                                            class="mdi mdi-star text-warning align-middle"></i>
+                                                        (4.5)</span>
+                                                    <h6 class="fw-medium fs-14 mb-0">$99</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-0">
+                                            <div class="rich-list-prepend">
+                                                <div class="avatar avatar-sm">
+                                                    <img src="./images/laptop.png"
+                                                        alt="Gaming Laptop" class="size-7">
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="apps-product-overview.html"
+                                                    class="rich-list-title text-body fs-14 fw-semibold mb-1">Gaming
+                                                    Laptop</a>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="text-muted"><i
+                                                            class="mdi mdi-star text-warning align-middle"></i>
+                                                        (4.8)</span>
+                                                    <h6 class="fw-medium fs-14 mb-0">$1,299</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Transactions</h5>
+                                    <div class="dropdown">
+                                        <a href="#!" class="text-muted dropdown-toggle" data-bs-toggle="dropdown"
+                                            aria-expanded="false" aria-label="more">Monthly</a>
+                                        <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#!">Weekly</a></li>
+                                            <li><a class="dropdown-item" href="#!">Monthly</a></li>
+                                            <li><a class="dropdown-item" href="#!">Yearly</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="rich-list px-4 mx-n4" data-simplebar style="max-height: 375px;">
+                                        <div class="rich-list-item px-1 py-2">
+                                            <div class="rich-list-prepend">
+                                                <div
+                                                    class="avatar size-8 avatar-circle bg-primary-subtle text-primary d-flex align-items-center justify-content-center revenue-icon me-1">
+                                                    <i class="bi bi-paypal fs-15"></i>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">John
+                                                    Doe</a>
+                                                <span class="rich-list-subtitle">PayPal Payment</span>
+                                            </div>
+                                            <div class="rich-list-append text-end flex-column">
+                                                <h6 class="mb-0 fw-medium text-success fs-14">+$250</h6>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-1 py-2">
+                                            <div class="rich-list-prepend">
+                                                <div
+                                                    class="avatar size-8 avatar-circle bg-success-subtle text-success d-flex align-items-center justify-content-center revenue-icon me-1">
+                                                    <i class="bi bi-credit-card fs-15"></i>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Alice
+                                                    Johnson</a>
+                                                <span class="rich-list-subtitle">Credit Card Payment</span>
+                                            </div>
+                                            <div class="rich-list-append text-end flex-column">
+                                                <h6 class="mb-0 fw-medium text-success fs-14">+$1,200</h6>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-1 py-2">
+                                            <div class="rich-list-prepend">
+                                                <div
+                                                    class="avatar size-8 avatar-circle bg-warning-subtle text-warning d-flex align-items-center justify-content-center revenue-icon me-1">
+                                                    <i class="bi bi-wallet2 fs-15"></i>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Daniel
+                                                    Carter</a>
+                                                <span class="rich-list-subtitle">Wallet Payment</span>
+                                            </div>
+                                            <div class="rich-list-append text-end flex-column">
+                                                <h6 class="mb-0 fw-medium text-danger fs-14">-$350</h6>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-1 py-2">
+                                            <div class="rich-list-prepend">
+                                                <div
+                                                    class="avatar size-8 avatar-circle bg-danger-subtle text-danger d-flex align-items-center justify-content-center revenue-icon me-1">
+                                                    <i class="bi bi-bank fs-15"></i>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Emma
+                                                    Wilson</a>
+                                                <span class="rich-list-subtitle">Bank Transfer</span>
+                                            </div>
+                                            <div class="rich-list-append text-end flex-column">
+                                                <h6 class="mb-0 fw-medium text-success fs-14">+$720</h6>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-1 py-2">
+                                            <div class="rich-list-prepend">
+                                                <div
+                                                    class="avatar size-8 avatar-circle bg-info-subtle text-info d-flex align-items-center justify-content-center revenue-icon me-1">
+                                                    <i class="bi bi-cash-stack fs-15"></i>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Liam
+                                                    Johnson</a>
+                                                <span class="rich-list-subtitle">Cash on Delivery</span>
+                                            </div>
+                                            <div class="rich-list-append text-end flex-column">
+                                                <h6 class="mb-0 fw-medium text-danger fs-14">-$450</h6>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-1 py-2">
+                                            <div class="rich-list-prepend">
+                                                <div
+                                                    class="avatar size-8 avatar-circle bg-primary-subtle text-primary d-flex align-items-center justify-content-center revenue-icon me-1">
+                                                    <i class="bi bi-paypal fs-15"></i>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Sophia
+                                                    Martinez</a>
+                                                <span class="rich-list-subtitle">PayPal Payment</span>
+                                            </div>
+                                            <div class="rich-list-append text-end flex-column">
+                                                <h6 class="mb-0 fw-medium text-danger fs-14">-$680</h6>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-1 py-2">
+                                            <div class="rich-list-prepend">
+                                                <div
+                                                    class="avatar size-8 avatar-circle bg-success-subtle text-success d-flex align-items-center justify-content-center revenue-icon me-1">
+                                                    <i class="bi bi-credit-card fs-15"></i>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Michael
+                                                    Scott</a>
+                                                <span class="rich-list-subtitle">Credit Card Payment</span>
+                                            </div>
+                                            <div class="rich-list-append text-end flex-column">
+                                                <h6 class="mb-0 fw-medium text-success fs-14">+$1,100</h6>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-1 py-2">
+                                            <div class="rich-list-prepend">
+                                                <div
+                                                    class="avatar size-8 avatar-circle bg-warning-subtle text-warning d-flex align-items-center justify-content-center revenue-icon me-1">
+                                                    <i class="bi bi-wallet2 fs-15"></i>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Olivia
+                                                    Harris</a>
+                                                <span class="rich-list-subtitle">Wallet Payment</span>
+                                            </div>
+                                            <div class="rich-list-append text-end flex-column">
+                                                <h6 class="mb-0 fw-medium text-danger fs-14">-$430</h6>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-1 py-2">
+                                            <div class="rich-list-prepend">
+                                                <div
+                                                    class="avatar size-8 avatar-circle bg-danger-subtle text-danger d-flex align-items-center justify-content-center revenue-icon me-1">
+                                                    <i class="bi bi-bank fs-15"></i>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">William
+                                                    Brown</a>
+                                                <span class="rich-list-subtitle">Bank Transfer</span>
+                                            </div>
+                                            <div class="rich-list-append text-end flex-column">
+                                                <h6 class="mb-0 fw-medium text-success fs-14">+$950</h6>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-1 py-2">
+                                            <div class="rich-list-prepend">
+                                                <div
+                                                    class="avatar size-8 avatar-circle bg-info-subtle text-info d-flex align-items-center justify-content-center revenue-icon me-1">
+                                                    <i class="bi bi-cash-stack fs-15"></i>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Emma
+                                                    Wilson</a>
+                                                <span class="rich-list-subtitle">Cash on Delivery</span>
+                                            </div>
+                                            <div class="rich-list-append text-end flex-column">
+                                                <h6 class="mb-0 fw-medium text-danger fs-14">-$520</h6>
+                                            </div>
+                                        </div>
+                                        <div class="rich-list-item px-1 py-2">
+                                            <div class="rich-list-prepend">
+                                                <div
+                                                    class="avatar size-8 avatar-circle bg-primary-subtle text-primary d-flex align-items-center justify-content-center revenue-icon me-1">
+                                                    <i class="bi bi-paypal fs-15"></i>
+                                                </div>
+                                            </div>
+                                            <div class="rich-list-content">
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Liam
+                                                    Johnson</a>
+                                                <span class="rich-list-subtitle">PayPal Payment</span>
+                                            </div>
+                                            <div class="rich-list-append text-end flex-column">
+                                                <h6 class="mb-0 fw-medium text-danger fs-14">-$770</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- layout/footer.html -->
+
+        </div>
+    </div>
+
+    <!-- layout/rightbar.html -->
+
+    <!--layout/switcher.html-->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/metisMenu.min.js"></script>
+    <script src="./js/simplebar.min.js"></script>
+    <script src="./js/eva.min.js"></script>
+    <script src="./js/scroll-top.init.js"></script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/apexcharts.min.js"></script>
+    <script src="./js/progress-bar.js"></script>
+    <script src="./js/index.init.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
