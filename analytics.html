@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aquiry | Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="amvsoft.tech Admin & Dashboard Template" name="description">
+    <meta content="amvsoft.tech" name="author">
+    <link rel="shortcut icon" href="./images/logo-sm.png">
+    <link href="./css/select2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/simplebar.min.css">
+    <link href="./css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <link href="./css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="layout-wrapper">
+
+        <div data-layout-include="layout/header.html"></div>
+
+        <div data-layout-include="layout/sidebar-menu.html"></div>
+        
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+        <div class="main-content">
+
+            <div class="page-content">
+                
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Analytics</h4>
+                                <nav aria-label="breadcrumb" class="page-title-right">
+                                    <ol class="breadcrumb border-0">
+                                        <li class="breadcrumb-item">
+                                            <a href="#!">
+                                                <i class="mdi mdi-home-outline fs-18 lh-1"></i>
+                                                <span class="visually-hidden">Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a href="#!">Dashboard</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Analytics</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 col-xxl-2">
+                            <div class="card bg-info-subtle anaytics-card inset-info position-relative overflow-hidden">
+                                <div class="card-body">
+                                    <div class="avatar avatar-xs bg-info text-white rounded-3 mb-4">
+                                        <i data-eva="message-circle-outline" class="size-5"></i>
+                                    </div>
+                                    <div>
+                                        <p class="fs-20 mb-1 fw-semibold"><span data-counter="15119"></span></p>
+                                        <p class="fs-14 mb-0">Total Inquiries
+                                            <span class="text-success fs-13 ms-1 fw-medium">
+                                                <i data-eva="trending-up" class="size-4 me-1 align-middle"></i>8.2%
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xxl-2">
+                            <div class="card bg-success-subtle anaytics-card inset-success position-relative overflow-hidden">
+                                <div class="card-body">
+                                    <div class="avatar avatar-xs bg-success text-white rounded-3 mb-4">
+                                        <i data-eva="checkmark-circle-2-outline" class="size-5"></i>
+                                    </div>
+                                    <div>
+                                        <p class="fs-20 mb-1 fw-semibold"><span data-counter="11980"></span></p>
+                                        <p class="fs-14 mb-0">Cases Resolved
+                                            <span class="text-success fs-13 ms-1 fw-medium">
+                                                <i data-eva="trending-up" class="size-4 me-1 align-middle"></i>6.7%
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xxl-2">
+                            <div class="card bg-primary-subtle anaytics-card inset-primary position-relative overflow-hidden">
+                                <div class="card-body">
+                                    <div class="avatar avatar-xs bg-primary text-white rounded-3 mb-4">
+                                        <i data-eva="bell-outline" class="size-5"></i>
+                                    </div>
+                                    <div>
+                                        <p class="fs-20 mb-1 fw-semibold"><span data-counter="245"></span></p>
+                                        <p class="fs-14 mb-0">New Requests
+                                            <span class="text-success fs-13 ms-1 fw-medium">
+                                                <i data-eva="trending-up" class="size-4 me-1 align-middle"></i>5.4%
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xxl-2">
+                            <div class="card bg-danger-subtle anaytics-card inset-danger position-relative overflow-hidden">
+                                <div class="card-body">
+                                    <div class="avatar avatar-xs bg-danger text-white rounded-3 mb-4">
+                                        <i data-eva="clock-outline" class="size-5"></i>
+                                    </div>
+                                    <div>
+                                        <p class="fs-20 mb-1 fw-semibold"><span data-counter="320"></span></p>
+                                        <p class="fs-14 mb-0">Pending Tasks
+                                            <span class="text-danger fs-13 ms-1 fw-medium">
+                                                <i data-eva="trending-down" class="size-4 me-1 align-middle"></i>2.1%
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xxl-2">
+                            <div class="card bg-secondary-subtle anaytics-card inset-secondary position-relative overflow-hidden">
+                                <div class="card-body">
+                                    <div class="avatar avatar-xs bg-secondary text-white rounded-3 mb-4">
+                                        <i data-eva="clock-outline" class="size-5"></i>
+                                    </div>
+                                    <div>
+                                        <p class="fs-20 mb-1 fw-semibold">2.4 hrs</p>
+                                        <p class="fs-14 mb-0">Response Time
+                                            <span class="text-success fs-13 ms-1 fw-medium">
+                                                <i data-eva="trending-up" class="size-4 me-1 align-middle"></i>12%
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xxl-2">
+                            <div class="card bg-dark-subtle anaytics-card inset-dark position-relative overflow-hidden">
+                                <div class="card-body">
+                                    <div class="avatar avatar-xs bg-dark text-white rounded-3 mb-4">
+                                        <i data-eva="trending-up-outline" class="size-5"></i>
+                                    </div>
+                                    <div>
+                                        <p class="fs-20 mb-1 fw-semibold"><span data-counter="71"></span>%</p>
+                                        <p class="fs-14 mb-0">Conversion Rate
+                                            <span class="text-success fs-13 ms-1 fw-medium">
+                                                <i data-eva="trending-up" class="size-4 me-1 align-middle"></i>1.9%
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xxl-5">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between mb-4">
+                                                <div>
+                                                    <p class="text-muted fw-medium fs-14 mb-0">Bounce Rate</p>
+                                                    <p class="fs-20 mb-0 fw-semibold">
+                                                        <span data-counter="58"></span>.7%
+                                                        <span class="text-danger fs-13 ms-1">
+                                                            <i data-eva="trending-down" class="size-4 me-1 align-middle"></i>2.3%
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="avatar avatar-md bg-body-secondary border-dashed border-1 border-primary border-opacity-50 rounded-circle">
+                                                    <img src="./images/rate.png" alt="response" alt="User" class="size-7">
+                                                </div>
+                                            </div>
+                                            <div id="bounceRateChart" data-colors='["var(--bs-primary)"]' class="apex-charts" dir="ltr"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card card-h-100">
+                                        <div class="card-body d-flex flex-column justify-content-between h-100">
+                                            <div class="d-flex justify-content-between mb-4">
+                                                <div>
+                                                    <p class="text-muted fw-medium fs-14 mb-0">Resolution Time</p>
+                                                    <p class="fs-20 mb-0 fw-semibold">
+                                                        <span>6m 21s</span>
+                                                        <span class="text-success fs-13 ms-1">
+                                                            <i data-eva="trending-up" class="size-4 me-1 align-middle"></i>5.1%
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="avatar avatar-md bg-body-secondary border-dashed border-1 border-secondary border-opacity-50 rounded-circle">
+                                                    <img src="./images/clock.png" alt="response" alt="User" class="size-7">
+                                                </div>
+                                            </div>
+                                            <div class="position-relative mt-12">
+                                                <span class="progress-label bg-secondary-subtle px-4 mb-4 d-inline-block rounded text-secondary fw-medium position-absolute">6.8</span>
+                                                <div class="progress custome-progress mb-3">
+                                                    <div class="progress-bar bg-secondary" style="width: 68%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card card-h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between mb-4">
+                                                <div>
+                                                    <p class="text-muted fw-medium fs-14 mb-0">Active Requests</p>
+                                                    <p class="fs-20 mb-0 fw-semibold">
+                                                        <span data-counter="320"></span>
+                                                        <span class="text-success fs-13 ms-1">
+                                                            <i data-eva="trending-up" class="size-4 me-1 align-middle"></i>3.8%
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="avatar avatar-md bg-body-secondary border-dashed border-1 border-success border-opacity-50 rounded-circle">
+                                                    <img src="./images/good-conversion-rate.png" alt="response" alt="User" class="size-7">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div id="activeRequestChart" data-colors='["var(--bs-success)"]' class="apex-charts" dir="ltr"></div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="fs-20 mb-2 fw-semibold"><span data-counter="211"></span></p>
+                                                    <span class="badge badge-label-success mb-2">3.8%</span>
+                                                    <p class="text-muted mb-0">vs last month</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <p class="text-muted fw-medium fs-14 mb-0">Avg Response Time</p>
+                                                    <p class="fs-20 mb-0 fw-semibold">
+                                                        <span>3m 14s</span>
+                                                        <span class="text-success fs-13 ms-1">
+                                                            <i data-eva="trending-up" class="size-4 me-1 align-middle"></i>6.4%
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="avatar avatar-md bg-body-secondary border-dashed border-1 border-info border-opacity-50 rounded-circle">
+                                                    <img src="./images/part-time.png" alt="response" alt="User" class="size-7">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="avgResponseChart" data-colors='["var(--bs-info)"]' class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-7">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Status Overview</h5>
+                                    <div class="dropdown">
+                                        <a href="#!" class="text-muted dropdown-toggle" data-bs-toggle="dropdown">Last 30 days</a>
+                                        <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#!">Today</a></li>
+                                            <li><a class="dropdown-item" href="#!">Last 7 Days</a></li>
+                                            <li><a class="dropdown-item" href="#!">Last 30 Days</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="statusOverviewChart" data-colors='["var(--bs-warning)", "var(--bs-primary)"]' class="apex-charts" dir="ltr"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <div class="card card-h-100">
+                                <div class="card-header">
+                                    <h5 class="card-title">Top Performing Pages</h5>
+                                    <div class="card-addon">
+                                        <a href="#!" class="btn btn-label-primary btn-sm"><i data-eva="download-outline" class="size-4 me-1"></i>Download</a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive text-nowrap">
+                                        <table class="table table-borderless align-middle mb-0">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Page ID</th>
+                                                    <th>Page</th>
+                                                    <th class="text-end">Views</th>
+                                                    <th class="text-end">Growth</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="#!" class="text-muted">#PG-1001</a></td>
+                                                    <td>
+                                                        <h6 class="mb-0"><a href="#!" class="text-reset">Home Page</a></h6>
+                                                    </td>
+                                                    <td class="text-end">12.4K</td>
+                                                    <td class="text-end text-success fw-semibold"><i data-eva="trending-up-outline" class="size-4 me-1"></i>12%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#!" class="text-muted">#PG-1002</a></td>
+                                                    <td>
+                                                        <h6 class="mb-0"><a href="#!" class="text-reset">Product Page</a></h6>
+                                                    </td>
+                                                    <td class="text-end">9.8K</td>
+                                                    <td class="text-end text-success fw-semibold"><i data-eva="trending-up-outline" class="size-4 me-1"></i>8%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#!" class="text-muted">#PG-1003</a></td>
+                                                    <td>
+                                                        <h6 class="mb-0"><a href="#!" class="text-reset">Pricing Page</a></h6>
+                                                    </td>
+                                                    <td class="text-end">7.2K</td>
+                                                    <td class="text-end text-danger fw-semibold"><i data-eva="trending-down-outline" class="size-4 me-1"></i>3%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#!" class="text-muted">#PG-1004</a></td>
+                                                    <td>
+                                                        <h6 class="mb-0"><a href="#!" class="text-reset">Blog Page</a></h6>
+                                                    </td>
+                                                    <td class="text-end">5.6K</td>
+                                                    <td class="text-end text-success fw-semibold"><i data-eva="trending-up-outline" class="size-4 me-1"></i>15%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#!" class="text-muted">#PG-1005</a></td>
+                                                    <td>
+                                                        <h6 class="mb-0"><a href="#!" class="text-reset">Contact Page</a></h6>
+                                                    </td>
+                                                    <td class="text-end">3.1K</td>
+                                                    <td class="text-end text-danger fw-semibold">
+                                                        <i data-eva="trending-down-outline" class="size-4 me-1"></i>5%
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#!" class="text-muted">#PG-1006</a></td>
+                                                    <td>
+                                                        <h6 class="mb-0"><a href="#!" class="text-reset">About Page</a></h6>
+                                                    </td>
+                                                    <td class="text-end">4.3K</td>
+                                                    <td class="text-end text-success fw-semibold">
+                                                        <i data-eva="trending-up-outline" class="size-4 me-1"></i>6%
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#!" class="text-muted">#PG-1007</a></td>
+                                                    <td>
+                                                        <h6 class="mb-0"><a href="#!" class="text-reset">Services Page</a></h6>
+                                                    </td>
+                                                    <td class="text-end">6.7K</td>
+                                                    <td class="text-end text-success fw-semibold">
+                                                        <i data-eva="trending-up-outline" class="size-4 me-1"></i>10%
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Recent Activity</h5>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="app-search">
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control bg-body-secondary border" placeholder="Search Here..">
+                                                <i data-eva="search-outline" class="align-middle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a href="#!" class="btn btn-primary btn-sm fs-13 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-label="more">Sort By</a>
+                                            <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#!">All Activities</a></li>
+                                                <li><a class="dropdown-item" href="#!">New Inquiries</a></li>
+                                                <li><a class="dropdown-item" href="#!">Pending Requests</a></li>
+                                                <li><a class="dropdown-item" href="#!">In Progress</a></li>
+                                                <li><a class="dropdown-item" href="#!">Resolved</a></li>
+                                                <li><a class="dropdown-item" href="#!">Escalated</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive text-nowrap">
+                                        <table class="table align-middle mb-0">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Activity ID</th>
+                                                    <th>User</th>
+                                                    <th>Action</th>
+                                                    <th>Category</th>
+                                                    <th>Channel</th>
+                                                    <th>Status</th>
+                                                    <th>Time</th>
+                                                    <th class="text-end">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="#!" class="text-muted">#ACT-1001</a></td>
+                                                    <td>
+                                                        <a href="#!" class="d-flex align-items-center gap-2 text-body">
+                                                            <span class="avatar avatar-sm avatar-circle">
+                                                                <img src="./images/avatar-11.png" alt="User" class="size-7">
+                                                            </span>
+                                                            <span>
+                                                                <p class="fw-semibold mb-0">Rahul Sharma</p>
+                                                                <small class="text-muted">Web User</small>
+                                                            </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Submitted new inquiry</td>
+                                                    <td>Technical</td>
+                                                    <td>Website</td>
+                                                    <td><span class="badge badge-label-warning">Pending</span></td>
+                                                    <td>2 min ago</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-success btn-icon"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#!" class="text-muted">#ACT-1002</a></td>
+                                                    <td>
+                                                        <a href="#!" class="d-flex align-items-center gap-2 text-body">
+                                                            <span class="avatar avatar-sm avatar-circle">
+                                                                <img src="./images/avatar-2.png" alt="User" class="size-7">
+                                                            </span>
+                                                            <span>
+                                                                <p class="fw-semibold mb-0">Priya Patel</p>
+                                                                <small class="text-muted">Mobile App</small>
+                                                            </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Inquiry resolved</td>
+                                                    <td>Billing</td>
+                                                    <td>App</td>
+                                                    <td><span class="badge badge-label-success">Resolved</span></td>
+                                                    <td>10 min ago</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-success btn-icon"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#!" class="text-muted">#ACT-1003</a></td>
+                                                    <td>
+                                                        <a href="#!" class="d-flex align-items-center gap-2 text-body">
+                                                            <span class="avatar avatar-sm avatar-circle">
+                                                                <img src="./images/avatar-3.png" alt="User" class="size-7">
+                                                            </span>
+                                                            <span>
+                                                                <p class="fw-semibold mb-0">Amit Verma</p>
+                                                                <small class="text-muted">Email</small>
+                                                            </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>Request escalated</td>
+                                                    <td>Account</td>
+                                                    <td>Email</td>
+                                                    <td><span class="badge badge-label-danger">Escalated</span></td>
+                                                    <td>25 min ago</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-success btn-icon"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#!" class="text-muted">#ACT-1004</a></td>
+                                                    <td>
+                                                        <a href="#!" class="d-flex align-items-center gap-2 text-body">
+                                                            <span class="avatar avatar-sm avatar-circle">
+                                                                <img src="./images/avatar-4.png" alt="User" class="size-7">
+                                                            </span>
+                                                            <span>
+                                                                <p class="fw-semibold mb-0">Neha Joshi</p>
+                                                                <small class="text-muted">Social</small>
+                                                            </span>
+                                                        </a>
+                                                    </td>
+                                                    <td>New inquiry received</td>
+                                                    <td>General</td>
+                                                    <td>Social Media</td>
+                                                    <td><span class="badge badge-label-info">New</span></td>
+                                                    <td>1 hr ago</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-success btn-icon"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center gap-4 justify-content-between mt-3">
+                                        <div>
+                                            <p class="mb-0 text-muted">
+                                                Showing <span class="fw-semibold text-body">1</span> -
+                                                <span class="fw-semibold text-body">4</span> of
+                                                <span class="fw-semibold text-body">120</span> Activities
+                                            </p>
+                                        </div>
+                                        <ul class="pagination pagination-arrow mb-0 ms-auto">
+                                            <li class="page-item"><a class="page-link" href="#!"><i class="mdi mdi-chevron-left"></i></a></li>
+                                            <li class="page-item"><a class="page-link active" href="#!">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#!"><i class="mdi mdi-chevron-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-7">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Audience Report</h5>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-label-primary btn-sm">1D</button>
+                                        <button type="button" class="btn btn-label-primary btn-sm">1W</button>
+                                        <button type="button" class="btn btn-label-primary btn-sm">1M</button>
+                                        <button type="button" class="btn btn-label-primary btn-sm">6M</button>
+                                        <button type="button" class="btn btn-label-primary btn-sm">1Y</button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-2">
+                                            <div class="row g-4 g-md-6 ps-2">
+                                                <div class="col-6 col-md-12">
+                                                    <p class="mb-0 fw-medium fs-20">84,245</p>
+                                                    <p class="text-muted mb-1">Total Audience</p>
+                                                </div>
+                                                <div class="col-6 col-md-12">
+                                                    <p class="mb-0 fw-medium fs-20">12,480</p>
+                                                    <p class="text-muted mb-1">New Visitors</p>
+                                                </div>
+                                                <div class="col-6 col-md-12">
+                                                    <p class="mb-0 fw-medium fs-20">71,765</p>
+                                                    <p class="text-muted mb-1">Returning Visitors</p>
+                                                </div>
+                                                <div class="col-6 col-md-12">
+                                                    <p class="mb-0 fw-medium fs-20">4m 32s</p>
+                                                    <p class="text-muted mb-1">Avg. Session</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div id="audienceReportChart" data-colors='["var(--bs-primary)", "var(--bs-danger)", "var(--bs-success)", "var(--bs-primary)"]' class="apex-charts" dir="ltr"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Traffic Channer</h5>
+                                        <div class="dropdown">
+                                            <a href="#!" class="text-muted dropdown-toggle" data-bs-toggle="dropdown">30 days</a>
+                                            <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#!">Today</a></li>
+                                                <li><a class="dropdown-item" href="#!">Last 7 Days</a></li>
+                                                <li><a class="dropdown-item" href="#!">Last 30 Days</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="trafficChart" data-colors='["var(--bs-primary)", "var(--bs-warning)", "var(--bs-success)", "var(--bs-danger)"]' class="apex-charts mb-6" dir="ltr"></div>
+                                        <div class="row gy-4 gx-5">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="size-3 bg-primary bg-opacity-40 border border-primary border-opacity-25 rounded-1"></div>
+                                                    <p class="text-muted mb-0">Organic Search</p>
+                                                </div>
+                                                <p class="text-muted fw-medium mb-0 ms-5">
+                                                    <span class="fs-16 text-body fw-semibold me-2" data-counter="1458"></span>22%
+                                                </p>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="size-3 bg-warning bg-opacity-40 border border-warning border-opacity-25 rounded-1"></div>
+                                                    <p class="text-muted mb-0">Paid Ads</p>
+                                                </div>
+                                                <p class="text-muted fw-medium mb-0 ms-5">
+                                                    <span class="fs-16 text-body fw-semibold me-2" data-counter="2450"></span>68%
+                                                </p>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="size-3 bg-success bg-opacity-40 border border-success border-opacity-25 rounded-1"></div>
+                                                    <p class="text-muted mb-0">Referral</p>
+                                                </div>
+                                                <p class="text-muted fw-medium mb-0 ms-5">
+                                                    <span class="fs-16 text-body fw-semibold me-2" data-counter="980"></span>11%
+                                                </p>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="size-3 bg-danger bg-opacity-40 border border-danger border-opacity-25 rounded-1"></div>
+                                                    <p class="text-muted mb-0">Social Media</p>
+                                                </div>
+                                                <p class="text-muted fw-medium mb-0 ms-5">
+                                                    <span class="fs-16 text-body fw-semibold me-2" data-counter="760"></span>4%
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Sessions by Countries</h5>
+                                        <div class="dropdown">
+                                            <a href="#!" class="text-muted dropdown-toggle" data-bs-toggle="dropdown">30 days</a>
+                                            <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#!">Today</a></li>
+                                                <li><a class="dropdown-item" href="#!">Last 7 Days</a></li>
+                                                <li><a class="dropdown-item" href="#!">Last 30 Days</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="px-4 mx-n4" data-simplebar style="max-height: 315px;">
+                                            <div class="vstack gap-6">
+                                                <div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                                        <a href="#!" class="text-body fw-medium">India</a>
+                                                        <h6 class="text-muted mb-0 fw-medium">82%</h6>
+                                                    </div>
+                                                    <div class="progress progress-md bg-body-secondary custome-progress position-relative">
+                                                        <div class="bg-light h-1 w-100 position-absolute top-50 translate-middle-y"></div>
+                                                        <div class="progress-bar bg-warning" style="width: 82%"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                                        <a href="#!" class="text-body fw-medium">United States</a>
+                                                        <h6 class="text-muted mb-0 fw-medium">75%</h6>
+                                                    </div>
+                                                    <div class="progress progress-md bg-body-secondary custome-progress position-relative">
+                                                        <div class="bg-light h-1 w-100 position-absolute top-50 translate-middle-y"></div>
+                                                        <div class="progress-bar bg-warning" style="width: 75%"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                                        <a href="#!" class="text-body fw-medium">United Kingdom</a>
+                                                        <h6 class="text-muted mb-0 fw-medium">68%</h6>
+                                                    </div>
+                                                    <div class="progress progress-md bg-body-secondary custome-progress position-relative">
+                                                        <div class="bg-light h-1 w-100 position-absolute top-50 translate-middle-y"></div>
+                                                        <div class="progress-bar bg-warning" style="width: 68%"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                                        <a href="#!" class="text-body fw-medium">Canada</a>
+                                                        <h6 class="text-muted mb-0 fw-medium">60%</h6>
+                                                    </div>
+                                                    <div class="progress progress-md bg-body-secondary custome-progress position-relative">
+                                                        <div class="bg-light h-1 w-100 position-absolute top-50 translate-middle-y"></div>
+                                                        <div class="progress-bar bg-warning" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                                        <a href="#!" class="text-body fw-medium">Australia</a>
+                                                        <h6 class="text-muted mb-0 fw-medium">55%</h6>
+                                                    </div>
+                                                    <div class="progress progress-md bg-body-secondary custome-progress position-relative">
+                                                        <div class="bg-light h-1 w-100 position-absolute top-50 translate-middle-y"></div>
+                                                        <div class="progress-bar bg-warning" style="width: 55%"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                                        <a href="#!" class="text-body fw-medium">Germany</a>
+                                                        <h6 class="text-muted mb-0 fw-medium">48%</h6>
+                                                    </div>
+                                                    <div class="progress progress-md bg-body-secondary custome-progress position-relative">
+                                                        <div class="bg-light h-1 w-100 position-absolute top-50 translate-middle-y"></div>
+                                                        <div class="progress-bar bg-warning" style="width: 48%"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                                        <a href="#!" class="text-body fw-medium">France</a>
+                                                        <h6 class="text-muted mb-0 fw-medium">42%</h6>
+                                                    </div>
+                                                    <div class="progress progress-md bg-body-secondary custome-progress position-relative">
+                                                        <div class="bg-light h-1 w-100 position-absolute top-50 translate-middle-y"></div>
+                                                        <div class="progress-bar bg-warning" style="width: 42%"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                                        <a href="#!" class="text-body fw-medium">Japan</a>
+                                                        <h6 class="text-muted mb-0 fw-medium">36%</h6>
+                                                    </div>
+                                                    <div class="progress progress-md bg-body-secondary custome-progress position-relative">
+                                                        <div class="bg-light h-1 w-100 position-absolute top-50 translate-middle-y"></div>
+                                                        <div class="progress-bar bg-warning" style="width: 36%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div data-layout-include="layout/footer.html"></div>
+
+        </div>
+    </div>
+
+    <div data-layout-include="layout/rightbar.html"></div>
+
+    <div data-layout-include="layout/switcher.html"></div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/metisMenu.min.js"></script>
+    <script src="./js/simplebar.min.js"></script>
+    <script src="./js/eva.min.js"></script>
+    <script src="./js/scroll-top.init.js"></script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/apexcharts.min.js"></script>
+    <script src="./js/analytics.init.js"></script>
+    <script src="./js/layout-loader.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
