@@ -536,6 +536,10 @@
       }));
   }
   e(document).ready(function () {
-    o();
+    window.LayoutIncludes && window.LayoutIncludes.ready
+      ? window.LayoutIncludes.ready.then(o).catch(function (e) {
+          (console.error(e), o());
+        })
+      : o();
   });
 })(jQuery);

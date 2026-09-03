@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Aquiry </title>
+    <title>Aquiry | Admin Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta content="Bootstrap 13 in 1 Admin & Dashboard Template" name="description">
     <meta content="Codebucks" name="author">
@@ -17,14 +17,10 @@
 <body>
     <div id="layout-wrapper">
 
-        <!--- layout/header.html -->
+        <div data-layout-include="layout/header.html"></div>
 
-        <!--- layout/sidebar-menu.html -->
+        <div data-layout-include="layout/sidebar-menu.html"></div>
         
-        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
-        
-        <!--- layout/sidebar-menu.html -->
-
         <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
 
         <div class="main-content">
@@ -1687,14 +1683,14 @@
                 </div>
             </div>
 
-            <!-- layout/footer.html -->
+            <div data-layout-include="layout/footer.html"></div>
 
         </div>
     </div>
 
-    <!-- layout/rightbar.html -->
+    <div data-layout-include="layout/rightbar.html"></div>
 
-    <!--layout/switcher.html-->
+    <div data-layout-include="layout/switcher.html"></div>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery.min.js"></script>
@@ -1706,6 +1702,7 @@
     <script src="./js/apexcharts.min.js"></script>
     <script src="./js/progress-bar.js"></script>
     <script src="./js/index.init.js"></script>
+    <script src="./js/layout-loader.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>

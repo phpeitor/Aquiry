@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initScrollTop() {
   const e = document.getElementById("progress-scroll"),
     t = document.querySelector(".progress-wrap path");
   if (!e || !t) return;
@@ -19,4 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
     e.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }));
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  window.LayoutIncludes && window.LayoutIncludes.ready
+    ? window.LayoutIncludes.ready.then(initScrollTop)
+    : initScrollTop();
 });
