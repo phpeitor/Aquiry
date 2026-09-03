@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aquiry | Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="amvsoft.tech Admin & Dashboard Template" name="description">
+    <meta content="amvsoft.tech" name="author">
+    <link rel="shortcut icon" href="./images/logo-sm.png">
+    <link href="./css/select2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/simplebar.min.css">
+    <link href="./css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <link href="./css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="layout-wrapper">
+
+        <div data-layout-include="layout/header.html"></div>
+
+        <div data-layout-include="layout/sidebar-menu.html"></div>
+        
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+        <div class="main-content">
+
+            <div class="page-content">
+                
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Add Patient</h4>
+                                <nav aria-label="breadcrumb" class="page-title-right">
+                                    <ol class="breadcrumb border-0">
+                                        <li class="breadcrumb-item">
+                                            <a href="#!">
+                                                <i class="mdi mdi-home-outline fs-18 lh-1"></i>
+                                                <span class="visually-hidden">Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a href="#!">Hospital</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Add Patient</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Personal Information</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-4">
+                                        <div class="col-xl-4">
+                                            <div class="row">
+                                                <div class="col-8 col-lg-6">
+                                                    <label for="addPatient" class="form-label border h-28 d-flex justify-content-center align-items-center flex-column gap-1 bg-body-tertiary rounded-2 cursor-pointer text-center">  
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-cloud-upload-outline"><g data-name="Layer 2"><g data-name="cloud-upload"><rect width="24" height="24" opacity="0"></rect><path d="M12.71 11.29a1 1 0 0 0-1.4 0l-3 2.9a1 1 0 1 0 1.38 1.44L11 14.36V20a1 1 0 0 0 2 0v-5.59l1.29 1.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path><path d="M17.67 7A6 6 0 0 0 6.33 7a5 5 0 0 0-3.08 8.27A1 1 0 1 0 4.75 14 3 3 0 0 1 7 9h.1a1 1 0 0 0 1-.8 4 4 0 0 1 7.84 0 1 1 0 0 0 1 .8H17a3 3 0 0 1 2.25 5 1 1 0 0 0 .09 1.42 1 1 0 0 0 .66.25 1 1 0 0 0 .75-.34A5 5 0 0 0 17.67 7z"></path></g></g></svg>                                                                                       
+                                                        <h6>Upload your Image</h6>
+                                                        <input type="file" class="d-none" id="addPatient">
+                                                    </label>
+                                                </div>
+                                            </div>                                         
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="row g-4">
+                                                <div class="col-md-6">
+                                                    <label for="patient-FirstName" class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" placeholder="Enter First Name" id="patient-FirstName">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="patient-LastName" class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" placeholder="Enter Last Name" id="patient-LastName">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="patientId" class="form-label">Patient ID</label>
+                                                    <input type="text" class="form-control" placeholder="#PAT-101" id="patientId">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="patientAge" class="form-label">Age</label>
+                                                    <input type="number" class="form-control" placeholder="0" id="patientAge">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="dateOfBirth-Patient" class="form-label">Date Of Birth</label>
+                                            <input type="text" class="form-control" placeholder="Select date" id="dateOfBirth-Patient">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patientGender" class="form-label">Gender</label>
+                                            <select id="patientGender" class="form-select select2-hidden-accessible" data-select2-id="select2-data-patientGender" tabindex="-1" aria-hidden="true">
+                                                <option data-select2-id="select2-data-2-4i1b">Male</option>
+                                                <option>Female</option>
+                                                <option>Other</option>
+                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-1-pdhm" style="width: 346.273px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-patientGender-container" aria-controls="select2-patientGender-container"><span class="select2-selection__rendered" id="select2-patientGender-container" role="textbox" aria-readonly="true" title="Male">Male</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patientOccupation" class="form-label">Occupation</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your Occupation" id="patientOccupation">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patient-Marital" class="form-label">Marital Status</label>
+                                            <select id="patient-Marital" class="form-select select2-hidden-accessible" data-select2-id="select2-data-patient-Marital" tabindex="-1" aria-hidden="true">
+                                                <option data-select2-id="select2-data-4-u3ia">Single</option>
+                                                <option>Married</option>
+                                                <option>Divorced</option>
+                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-3-4itc" style="width: 346.273px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-patient-Marital-container" aria-controls="select2-patient-Marital-container"><span class="select2-selection__rendered" id="select2-patient-Marital-container" role="textbox" aria-readonly="true" title="Single">Single</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patientReligion" class="form-label">Religion</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your Religion" id="patientReligion">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Contact Information</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-4">
+                                        <div class="col-md-4">
+                                            <label for="patient-PhoneNo" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" placeholder="Enter Phone Number" id="patient-PhoneNo">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patient-Email" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" placeholder="Enter Email Address" id="patient-Email">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patient-City" class="form-label">City</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your city" id="patient-City">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patient-State" class="form-label">State/Province</label>
+                                            <input type="text" class="form-control" placeholder="Enter Your State" id="patient-State">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patient-Country" class="form-label">Country</label>
+                                            <select id="patient-Country" class="form-select select2-hidden-accessible" data-select2-id="select2-data-patient-Country" tabindex="-1" aria-hidden="true">
+                                                <option data-select2-id="select2-data-8-s798">United States</option>
+                                                <option>United Kingdom</option>
+                                                <option>Canada</option>
+                                                <option>Australia</option>
+                                                <option>India</option>
+                                                <option>Germany</option>
+                                                <option>France</option>
+                                                <option>Italy</option>
+                                                <option>Japan</option>
+                                                <option>China</option>
+                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-7-a2xi" style="width: 346.273px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-patient-Country-container" aria-controls="select2-patient-Country-container"><span class="select2-selection__rendered" id="select2-patient-Country-container" role="textbox" aria-readonly="true" title="United States">United States</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patient-Zip" class="form-label">ZIP Code</label>
+                                            <input type="text" class="form-control" placeholder="Enter ZIP Number" id="patient-Zip">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patient-Emergencyno" class="form-label">Emergency Number</label>
+                                            <input type="tel" class="form-control" placeholder="Enter Phone Number" id="patient-Emergencyno">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="patient-Address" class="form-label">Street Address</label>
+                                            <textarea class="form-control" id="patient-Address" rows="3" placeholder="Enter Your Address"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Medical Information</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-4">
+                                        <div class="col-md-4">
+                                            <label for="patientBloodgroup" class="form-label">Blood Group</label>
+                                            <select id="patientBloodgroup" class="form-select select2-hidden-accessible" data-select2-id="select2-data-patientBloodgroup" tabindex="-1" aria-hidden="true">
+                                                <option data-select2-id="select2-data-6-lf2w">A+</option>
+                                                <option>A-</option>
+                                                <option>B+</option>
+                                                <option>B-</option>
+                                                <option>AB+</option>
+                                                <option>AB-</option>
+                                                <option>O+</option>
+                                                <option>O-</option>
+                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-5-ww5w" style="width: 346.273px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-patientBloodgroup-container" aria-controls="select2-patientBloodgroup-container"><span class="select2-selection__rendered" id="select2-patientBloodgroup-container" role="textbox" aria-readonly="true" title="A+">A+</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patientWeight" class="form-label">Weight (kg)</label>
+                                            <input type="text" class="form-control" placeholder="0 kg" id="patientWeight">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patientHeight" class="form-label">Height</label>
+                                            <input type="text" class="form-control" placeholder="0' 0'" id="patientHeight">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patientAllergies" class="form-label">Allergies</label>
+                                            <textarea class="form-control" id="patientAllergies" rows="3" placeholder="List Any Known Allergies"></textarea>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patientMedical" class="form-label">Medical History</label>
+                                            <textarea class="form-control" id="patientMedical" rows="3" placeholder="Previous illnesses, surgeries, chronic conditions"></textarea>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patientCurrent" class="form-label">Current Medications</label>
+                                            <textarea class="form-control" id="patientCurrent" rows="3" placeholder="List any current medications"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Insurance Information</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-4">
+                                        <div class="col-md-4">
+                                            <label for="patient-Insurance" class="form-label">Insurance Provider</label>
+                                            <input type="text" class="form-control" placeholder="Insurance Provider" id="patient-Insurance">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patient-Policy" class="form-label">Policy Number</label>
+                                            <input type="text" class="form-control" placeholder="000 0000 0000 0000 000" id="patient-Policy">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patientGroupno" class="form-label">Group Number</label>
+                                            <input type="number" class="form-control" placeholder="0" id="patientGroupno">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="patient-Provider" class="form-label">Provider Phone</label>
+                                            <input type="tel" class="form-control" placeholder="Enter Provider Number" id="patient-Provider">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-end mb-4">
+                            <button type="submit" class="btn btn-secondary">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Add Patient</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div data-layout-include="layout/footer.html"></div>
+
+        </div>
+    </div>
+
+    <div data-layout-include="layout/rightbar.html"></div>
+
+    <div data-layout-include="layout/switcher.html"></div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/metisMenu.min.js"></script>
+    <script src="./js/simplebar.min.js"></script>
+    <script src="./js/eva.min.js"></script>
+    <script src="./js/scroll-top.init.js"></script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/apexcharts.min.js"></script>
+    <script src="./js/layout-loader.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

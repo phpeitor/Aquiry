@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aquiry | Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="amvsoft.tech Admin & Dashboard Template" name="description">
+    <meta content="amvsoft.tech" name="author">
+    <link rel="shortcut icon" href="./images/logo-sm.png">
+    <link href="./css/select2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/simplebar.min.css">
+    <link href="./css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <link href="./css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="layout-wrapper">
+
+        <div data-layout-include="layout/header.html"></div>
+
+        <div data-layout-include="layout/sidebar-menu.html"></div>
+        
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+        <div class="main-content">
+
+            <div class="page-content">
+                
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Patient Overview</h4>
+                                <nav aria-label="breadcrumb" class="page-title-right">
+                                    <ol class="breadcrumb border-0">
+                                        <li class="breadcrumb-item">
+                                            <a href="#!">
+                                                <i class="mdi mdi-home-outline fs-18 lh-1"></i>
+                                                <span class="visually-hidden">Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a href="#!">Hospital</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Patient Overview</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-6 col-xxl-5">
+                            <div class="card sticky-top">
+                                <div class="card-body p-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5 border-end">
+                                            <div class="text-center p-6">
+                                                <div class="avatar avatar-xl avatar-circle overflow-hidden mb-5">
+                                                    <img src="./images/avatar-7.png" alt="Avatar Image" class="avatar-lg">
+                                                </div>
+                                                <h6 class="mb-2 fs-15">Alexandra Rodriguez</h6>
+                                                <p class="text-muted small mb-5">alexandrarodriguez@gmail.com</p>
+                                                <p class="fw-semibold mb-5">Appointments</p>
+                                                <div class="d-flex justify-content-center mb-8">
+                                                    <div class="w-50 border-end">
+                                                        <h4 class="mb-0 fs-18 fw-medium">10</h4>
+                                                        <span class="text-muted">Past</span>
+                                                    </div>
+                                                    <div class="w-50">
+                                                        <h4 class="mb-0 fs-18 fw-medium">3</h4>
+                                                        <span class="text-muted">Upcoming</span>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn btn-primary w-100">Send Message</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="p-6">
+                                                <div class="row gy-4 gx-6">
+                                                    <div class="col-6">
+                                                        <p class="text-muted mb-3">Gender</p>
+                                                        <p class="fs-14 fw-semibold mb-4">Male</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-muted mb-3">Birthday</p>
+                                                        <p class="fs-14 fw-semibold mb-4">Jan 12, 1985</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-muted mb-3">Phone number</p>
+                                                        <p class="fs-14 fw-semibold mb-4">(123) 456-7890</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-muted mb-3">Address</p>
+                                                        <p class="fs-14 fw-semibold mb-4">123 Main St, Apt 4B</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-muted mb-3">City</p>
+                                                        <p class="fs-14 fw-semibold mb-4">New York</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-muted mb-3">ZIP Code</p>
+                                                        <p class="fs-14 fw-semibold mb-4">10001</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-muted mb-3">Registration Date</p>
+                                                        <p class="fs-14 fw-semibold mb-0">Mar 15, 2020</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="text-muted mb-3">Status</p>
+                                                        <p class="fs-14 fw-semibold mb-0">Active</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-xxl-7">
+                            <div class="row">
+                                <div class="col-md-6 col-xxl-3">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <div class="mb-4">
+                                                <img src="./images/blood-pressure.png" width="28" alt="Blood Pressure">
+                                            </div>
+                                            <p class="text-muted mb-2">Blood Pressure</p>
+                                            <h4 class="fw-medium mb-0">120 / 80 <small class="text-muted fw-normal">mmHg</small></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xxl-3">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <div class="mb-4">
+                                                <img src="./images/heart-attack.png" width="28" alt="Heart Rate">
+                                            </div>
+                                            <p class="text-muted mb-2">Heart Rate</p>
+                                            <h4 class="fw-medium mb-0">78 <small class="text-muted fw-normal">/ min</small></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xxl-3">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <div class="mb-4">
+                                                <img src="./images/temperature.png" width="28" alt="Temperature">
+                                            </div>
+                                            <p class="text-muted mb-2">Temperature</p>
+                                            <h4 class="fw-medium mb-0">98.6 <small class="text-muted fw-normal">°F</small></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xxl-3">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <div class="mb-4">
+                                                <img src="./images/red-blood-cells.png" width="28" alt="Oxygen">
+                                            </div>
+                                            <p class="text-muted mb-2">Oxygen (SpO₂)</p>
+                                            <h4 class="fw-medium mb-0">97 <small class="text-muted fw-normal">%</small></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header border-bottom-0 pb-0">
+                                            <h5 class="card-title">Health Metrics Timeline</h5>
+                                            <div class="nav nav-pills" id="nav2-tab" role="tablist">
+                                                <a class="nav-item nav-link py-1" id="nav2-home-tab" data-bs-toggle="tab" href="#nav2-home" aria-selected="true" role="tab">Heart Rate</a>
+                                                <a class="nav-item nav-link py-1" id="nav2-profile-tab" data-bs-toggle="tab" href="#nav2-profile" aria-selected="false" tabindex="-1" role="tab">Blood Pressure</a>
+                                                <a class="nav-item nav-link py-1" id="nav2-contact-tab" data-bs-toggle="tab" href="#nav2-contact" aria-selected="false" tabindex="-1" role="tab">Oxygen Levels</a>
+                                                <a class="nav-item nav-link py-1" id="nav2-contact-tab" data-bs-toggle="tab" href="#nav2-contact" aria-selected="false" tabindex="-1" role="tab">Overall Status</a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="healthChart" data-colors='["var(--bs-primary)"]' class="apex-charts"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Appointments & Visits</h5>
+                                    <div class="d-flex gap-2">
+                                        <a href="apps-all-appointment.html" class="btn btn-outline-light btn-sm">See All</a>
+                                        <div class="dropdown">
+                                            <a href="#!" class="btn btn-outline-light btn-icon btn-sm text-muted" data-bs-toggle="dropdown" aria-label="more"><i data-eva="more-vertical-outline" class="size-4"></i></a>
+                                            <ul class="dropdown-menu dropdown-menu-animated dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#!">Export</a></li>
+                                                <li><a class="dropdown-item" href="#!">Settings</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row gx-3">
+                                        <div class="col-12 col-md-8">
+                                            <div class="rich-list pe-3" data-simplebar style="max-height: 350px;">
+                                                <div class="rich-list-item px-0 pb-3 pt-0">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm">
+                                                            <img src="./images/avatar-1.png" alt="Dr. Amelia Rutherford" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Dr. Amelia Rutherford</a>
+                                                        <span class="rich-list-subtitle">Mon, Sep 22 • 09:30 AM • Cardiology — Room 402</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="badge badge-label-success mb-1">Confirmed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-3">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm">
+                                                            <img src="./images/avatar-2.png" alt="Dr. Isabella De la Cruz" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Dr. Isabella María De la Cruz</a>
+                                                        <span class="rich-list-subtitle">Tue, Sep 23 • 11:00 AM • General Surgery — Teleconsult</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="badge badge-label-warning mb-1">Pending</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-3">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm">
+                                                            <img src="./images/avatar-3.png" alt="Dr. Chloe Montgomery-Wright" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Dr. Chloe Elizabeth</a>
+                                                        <span class="rich-list-subtitle">Wed, Sep 24 • 02:45 PM • Dermatology — Room 210</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="badge badge-label-danger mb-1">Cancelled</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-3">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm">
+                                                            <img src="./images/avatar-4.png" alt="Dr. Emily Johnson" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Dr. Emily Johnson</a>
+                                                        <span class="rich-list-subtitle">Thu, Sep 25 • 10:00 AM • Pediatrics — Room 108</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="badge badge-label-success mb-1">Confirmed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="rich-list-item px-0 py-3">
+                                                    <div class="rich-list-prepend">
+                                                        <div class="avatar avatar-sm">
+                                                            <img src="./images/avatar-5.png" alt="Dr. Sophia Martinez" class="size-7">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rich-list-content">
+                                                        <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Dr. Sophia Martinez</a>
+                                                        <span class="rich-list-subtitle">Fri, Sep 26 • 01:30 PM • Orthopedics — Room 305</span>
+                                                    </div>
+                                                    <div class="rich-list-append text-end flex-column">
+                                                        <span class="badge badge-label-warning mb-1">Pending</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="bg-light bg-opacity-20 border rounded p-4 h-100 d-flex flex-column justify-content-between">
+                                                <div>
+                                                    <span class="badge badge-label-info float-end">Follow-up</span>
+                                                    <p class="mb-3 fw-medium">Last visit :</p>
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <div>
+                                                            <div class="fs-20 fw-semibold">Aug 31, 2025</div>
+                                                            <small class="text-muted">Visited 15 days ago</small>
+                                                        </div>
+                                                        <div class="ms-auto">
+                                                        </div>
+                                                    </div>
+                                                    <hr class="my-3">
+                                                    <p class="mb-4 fw-medium">Attending physician :</p>
+                                                    <div class="d-flex gap-2 align-items-center">
+                                                        <div class="avatar avatar-sm">
+                                                            <img src="./images/avatar-7.png" alt="Avatar Image" class="avatar-xs">
+                                                        </div>
+                                                        <div>
+                                                            <a href="#!" class="fw-medium text-body">Dr. Priya Sharma</a>
+                                                            <small class="text-muted d-block">Cardiologist • MBBS, MD</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <small class="text-muted">Next available:</small>
+                                                        <div class="mt-1">
+                                                            <i class="ri-time-line me-1"></i>
+                                                            <small class="text-muted">Sep 28 • 10:00 AM</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn btn-primary mt-4">Schedule appointment</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-xxl-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Patient Timeline</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="px-4 mx-n4" data-simplebar style="max-height: 333px;">
+                                        <div class="timeline">
+                                            <div class="timeline-item">
+                                                <div class="timeline-pin">
+                                                    <i class="marker marker-circle text-info"></i>
+                                                </div>
+                                                <span class="rich-list-subtitle float-end">10 mins ago</span>
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Admission:</a>
+                                                <p class="rich-list-paragraph">John Doe admitted to Room 101, ICU</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-pin">
+                                                    <i class="marker marker-circle text-warning"></i>
+                                                </div>
+                                                <span class="rich-list-subtitle float-end">30 mins ago</span>
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Medication:</a>
+                                                <p class="rich-list-paragraph">IV Antibiotics administered by Dr. Priya Singh</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-pin">
+                                                    <i class="marker marker-circle text-success"></i>
+                                                </div>
+                                                <span class="rich-list-subtitle float-end">1 hour ago</span>
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Lab Test:</a>
+                                                <p class="rich-list-paragraph">Blood & Urine samples collected by Lab Tech Ritu Singh</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-pin">
+                                                    <i class="marker marker-circle text-primary"></i>
+                                                </div>
+                                                <span class="rich-list-subtitle float-end">2 hours ago</span>
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Checkup:</a>
+                                                <p class="rich-list-paragraph">Dr. Priya Singh performed routine checkup</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-pin">
+                                                    <i class="marker marker-circle text-danger"></i>
+                                                </div>
+                                                <span class="rich-list-subtitle float-end">3 hours ago</span>
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Vitals Alert:</a>
+                                                <p class="rich-list-paragraph">High BP reported, Nurse Anjali notified Dr. Priya Singh</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-pin">
+                                                    <i class="marker marker-circle text-secondary"></i>
+                                                </div>
+                                                <span class="rich-list-subtitle float-end">Yesterday</span>
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Discharge:</a>
+                                                <p class="rich-list-paragraph">John Doe discharged from Room 101, ICU</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-pin">
+                                                    <i class="marker marker-circle text-primary"></i>
+                                                </div>
+                                                <span class="rich-list-subtitle float-end">Today</span>
+                                                <a href="#!" class="rich-list-title text-body fs-14 fw-semibold">Follow-up:</a>
+                                                <p class="rich-list-paragraph">Appointment scheduled with Dr. Priya Singh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-xxl-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0">Billing & Insurance</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-5 d-flex justify-content-between">
+                                        <span class="text-muted mb-0">Insurance Provider</span>
+                                        <span class="mb-0 fw-semibold text-end">HDFC ERGO Health Insurance</span>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-between">
+                                        <span class="text-muted mb-0">Policy Number</span>
+                                        <span class="mb-0 fw-semibold text-end">POL-9823456-IND</span>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-between">
+                                        <span class="text-muted mb-0">Coverage Amount</span>
+                                        <span class="mb-0 fw-semibold text-end text-primary">₹ 5,00,000</span>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-between">
+                                        <span class="text-muted mb-0">Policy Validity</span>
+                                        <span class="mb-0 fw-semibold text-end">Jan 2024 – Dec 2025</span>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-between">
+                                        <span class="text-muted mb-0">Total Bill Amount</span>
+                                        <span class="mb-0 fw-semibold text-end text-danger">₹ 1,25,000</span>
+                                    </div>
+                                    <div class="mb-5 d-flex justify-content-between">
+                                        <span class="text-muted mb-0">Claim Status</span>
+                                        <span class="badge badge-label-info">Processing</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-muted mb-0">Payment Status</span>
+                                        <span class="badge badge-label-success">Paid</span>
+                                    </div>
+                                    <div class="bg-light bg-opacity-50 border rounded mt-3 py-2 px-3">
+                                        <span class="text-muted">
+                                            <strong class="text-body">Note:</strong> Co-pay of 10% applies on all procedures.
+                                            Please submit additional documents for claim approval.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Medical History</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive text-nowrap">
+                                        <table class="table align-middle mb-0">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Diagnosis</th>
+                                                    <th>Treatment</th>
+                                                    <th>Status</th>
+                                                    <th>Doctor</th>
+                                                    <th class="text-end">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>12 Sep 2025</td>
+                                                    <td>Type 2 Diabetes</td>
+                                                    <td>Insulin Therapy</td>
+                                                    <td><span class="badge badge-label-success">Ongoing</span></td>
+                                                    <td>Dr. Neha Patel</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28 Aug 2025</td>
+                                                    <td>Hypertension</td>
+                                                    <td>Beta Blockers</td>
+                                                    <td><span class="badge badge-label-warning">Follow-up</span></td>
+                                                    <td>Dr. Amit Sharma</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10 Jul 2025</td>
+                                                    <td>Asthma</td>
+                                                    <td>Inhaler</td>
+                                                    <td><span class="badge badge-label-info">Recovered</span></td>
+                                                    <td>Dr. Sneha Rao</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18 May 2025</td>
+                                                    <td>Migraine</td>
+                                                    <td>Pain Management Therapy</td>
+                                                    <td><span class="badge badge-label-success">Ongoing</span></td>
+                                                    <td>Dr. Rohan Mehta</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>02 Mar 2025</td>
+                                                    <td>Fractured Arm</td>
+                                                    <td>Cast + Physiotherapy</td>
+                                                    <td><span class="badge badge-label-info">Recovered</span></td>
+                                                    <td>Dr. Kavita Singh</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center gap-4 justify-content-between mt-3">
+                                        <div>
+                                            <p class="mb-0 text-muted">Showing <span class="fw-semibold text-body">1</span> - <span class="fw-semibold text-body">5</span> of <span class="fw-semibold text-body">12</span> Records</p>
+                                        </div>
+                                        <ul class="pagination pagination-arrow mb-0 ms-auto">
+                                            <li class="page-item"><a class="page-link page-prev" href="#!"><i class="mdi mdi-chevron-left align-middle pagination-left"></i><i class="mdi mdi-chevron-right align-middle pagination-right"></i><span class="visually-hidden">Previous</span></a></li>
+                                            <li class="page-item"><a class="page-link active" href="#!">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                            <li class="page-item"><a class="page-link page-next" href="#!"><i class="mdi mdi-chevron-right pagination-right align-middle"></i><i class="mdi mdi-chevron-left pagination-left align-middle"></i><span class="visually-hidden">Next</span></a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title mb-0">Prescriptions</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive text-nowrap">
+                                        <table class="table align-middle mb-0">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Medicine</th>
+                                                    <th>Dosage</th>
+                                                    <th>Duration</th>
+                                                    <th>Prescribed By</th>
+                                                    <th class="text-end">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>14 Sep 2025</td>
+                                                    <td>Metformin</td>
+                                                    <td>500 mg</td>
+                                                    <td>30 Days</td>
+                                                    <td>Dr. Neha Patel</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-success btn-icon" aria-label="View"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>05 Sep 2025</td>
+                                                    <td>Amlodipine</td>
+                                                    <td>10 mg</td>
+                                                    <td>20 Days</td>
+                                                    <td>Dr. Amit Sharma</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-success btn-icon" aria-label="View"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>22 Aug 2025</td>
+                                                    <td>Salbutamol Inhaler</td>
+                                                    <td>2 puffs</td>
+                                                    <td>As Needed</td>
+                                                    <td>Dr. Sneha Rao</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-success btn-icon" aria-label="View"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10 Aug 2025</td>
+                                                    <td>Atorvastatin</td>
+                                                    <td>20 mg</td>
+                                                    <td>45 Days</td>
+                                                    <td>Dr. Kavita Mehra</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-success btn-icon" aria-label="View"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28 Jul 2025</td>
+                                                    <td>Omeprazole</td>
+                                                    <td>40 mg</td>
+                                                    <td>14 Days</td>
+                                                    <td>Dr. Arjun Malhotra</td>
+                                                    <td class="text-end">
+                                                        <button type="button" class="btn btn-sm btn-label-success btn-icon" aria-label="View"><i data-eva="eye-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-primary btn-icon" aria-label="Edit"><i data-eva="edit-2-outline"></i></button>
+                                                        <button type="button" class="btn btn-sm btn-label-danger btn-icon" aria-label="Delete"><i data-eva="trash-2-outline"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-flex flex-wrap align-items-center gap-4 justify-content-between mt-3">
+                                        <div>
+                                            <p class="mb-0 text-muted">
+                                                Showing <span class="fw-semibold text-body">1</span> - <span class="fw-semibold text-body">5</span> of
+                                                <span class="fw-semibold text-body">15</span> Records
+                                            </p>
+                                        </div>
+                                        <ul class="pagination pagination-arrow mb-0 ms-auto">
+                                            <li class="page-item"><a class="page-link page-prev" href="#!"><i class="mdi mdi-chevron-left align-middle pagination-left"></i><i class="mdi mdi-chevron-right align-middle pagination-right"></i><span class="visually-hidden">Previous</span></a></li>
+                                            <li class="page-item"><a class="page-link active" href="#!">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                                            <li class="page-item"><a class="page-link page-next" href="#!"><i class="mdi mdi-chevron-right pagination-right align-middle"></i><i class="mdi mdi-chevron-left pagination-left align-middle"></i><span class="visually-hidden">Next</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div data-layout-include="layout/footer.html"></div>
+
+        </div>
+    </div>
+
+    <div data-layout-include="layout/rightbar.html"></div>
+
+    <div data-layout-include="layout/switcher.html"></div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/metisMenu.min.js"></script>
+    <script src="./js/simplebar.min.js"></script>
+    <script src="./js/eva.min.js"></script>
+    <script src="./js/scroll-top.init.js"></script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/apexcharts.min.js"></script>
+    <script src="./js/layout-loader.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
