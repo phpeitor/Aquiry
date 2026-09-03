@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Aquiry | Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="amvsoft.tech Admin & Dashboard Template" name="description">
+    <meta content="amvsoft.tech" name="author">
+    <link rel="shortcut icon" href="./images/logo-sm.png">
+    <link href="./css/select2.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/simplebar.min.css">
+    <link href="./css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <link href="./css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="layout-wrapper">
+
+        <div data-layout-include="layout/header.html"></div>
+
+        <div data-layout-include="layout/sidebar-menu.html"></div>
+        
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+        <div data-layout-include="layout/sidebar-left.html"></div>
+
+        <div class="main-content">
+
+            <div class="page-content">
+                
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Contacts</h4>
+                                <nav aria-label="breadcrumb" class="page-title-right">
+                                    <ol class="breadcrumb border-0">
+                                        <li class="breadcrumb-item">
+                                            <a href="#!">
+                                                <i class="mdi mdi-home-outline fs-18 lh-1"></i>
+                                                <span class="visually-hidden">Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a href="#!">Apps</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Contacts</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+                    <div class="row align-items-center mb-4 g-3">
+                        <div class="col-sm">
+                            <h5 class="mb-0">Contact List</h5>
+                        </div>
+                        <div class="col-sm-auto">
+                            <div class="d-flex gap-2">
+                                <div class="position-relative">
+                                    <input type="text" class="form-control bg-body-secondary" placeholder="Search..." id="search-contacts">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-search-outline size-5 position-absolute top-50 end-0 translate-middle-y me-3 text-muted"><g data-name="Layer 2"><g data-name="search"><rect width="24" height="24" opacity="0"></rect><path d="M20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8 7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 11a6 6 0 1 1 6 6 6 6 0 0 1-6-6z"></path></g></g></svg>
+                                </div>
+                                <button class="btn btn-primary d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#addContactModal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-plus-outline size-4"><g data-name="Layer 2"><g data-name="plus"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"></rect><path d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2z"></path></g></g></svg> Add New
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3" id="contact-grid">
+                        <!-- Contact Card 1 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-1.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">James Jackson</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">james@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 2 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-2.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Robin Coffin</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">robin@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 3 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-3.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Vincent Thornburg</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">vincent@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 4 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-4.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Fran Faulkner</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">fran@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 5 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-5.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Ernestine Waller</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">waller@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 6 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-6.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Jared Adams</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">jared@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 7 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-7.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Reyna Pelfrey</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">reyna@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 8 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-8.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Rafael Lowe</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">rafael@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 9 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-9.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Enrique Ratcliff</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">enrique@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 10 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-10.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Elizabeth Pegues</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">elizabeth@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 11 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-11.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Jenna Alford</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">jenna@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 12 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-12.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Teresa Boggs</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">teresa@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 13 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-13.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Doris Lees</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">doris@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 14 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-14.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Michael Anderson</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">michael@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 15 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-15.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Jasmine</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">jasmine@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 16 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-16.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Barbara Reynolds</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">barbara@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 17 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-17.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Allen Snyder</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">allen@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 18 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-18.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Patrick Barnes</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">patrick@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 19 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-19.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Lynne Paz</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">lynne@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 20 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-20.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Jason Tapia</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">jason@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 21 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-21.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Gavin Rodriguez</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">gavin@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 22 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-22.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Dianne Chandler</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">dianne@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 23 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-23.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Floyd Miles</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">floyd@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Card 24 -->
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="card shadow-none border mb-0 h-100">
+                                <div class="card-body p-3">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="flex-shrink-0">
+                                            <img src="./images/avatar-24.png" alt="" class="avatar-md rounded-3">
+                                        </div>
+                                        <div class="flex-grow-1 overflow-hidden">
+                                            <h6 class="text-truncate mb-1"><a href="#!" class="text-body text-decoration-none">Cody Fisher</a></h6>
+                                            <p class="text-muted text-truncate mb-0 fs-13">cody@example.com</p>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <div class="dropdown">
+                                                <a href="#!" class="text-muted" data-bs-toggle="dropdown">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-more-horizontal-outline size-4"><g data-name="Layer 2"><g data-name="more-horizotnal"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></g></g></svg>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    <li><a class="dropdown-item" href="#!">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#!">Favorite</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item text-danger" href="#!">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 mt-3">
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-phone-outline size-4"><g data-name="Layer 2"><g data-name="phone"><rect width="24" height="24" opacity="0"></rect><path d="M17.4 22A15.42 15.42 0 0 1 2 6.6 4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07 3.79 3.79 0 0 1 .72.18 1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65 4.34 4.34 0 0 1 .19.73 4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22zM6.6 4A2.61 2.61 0 0 0 4 6.6 13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64 6.93 4z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-message-square-outline size-4"><g data-name="Layer 2"><g data-name="message-square"><rect width="24" height="24" opacity="0"></rect><circle cx="12" cy="11" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="8" cy="11" r="1"></circle><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z"></path></g></g></svg></button>
+                                        <button class="btn btn-soft-secondary btn-sm btn-icon rounded-2 border shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-video-outline size-4"><g data-name="Layer 2"><g data-name="video"><rect width="24" height="24" opacity="0"></rect><path d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45 1.68 1.68 0 0 0 .69-.15 1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15zM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1zm5-1.4L17.19 12 20 9.4z"></path></g></g></svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="row align-items-center justify-content-between g-3 mt-3 mb-5">
+                        <div class="col-sm-auto">
+                            <p class="text-muted mb-0">Showing 1 to 24 of 154 entries</p>
+                        </div>
+                        <div class="col-sm-auto">
+                            <ul class="pagination pagination-rounded justify-content-center mb-0">
+                                <li class="page-item disabled">
+                                    <a href="#!" class="page-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-chevron-left-outline size-4"><g data-name="Layer 2"><g data-name="chevron-left"><rect width="24" height="24" transform="rotate(90 12 12)" opacity="0"></rect><path d="M13.36 17a1 1 0 0 1-.72-.31l-3.86-4a1 1 0 0 1 0-1.4l4-4a1 1 0 1 1 1.42 1.42L10.9 12l3.18 3.3a1 1 0 0 1 0 1.41 1 1 0 0 1-.72.29z"></path></g></g></svg></a>
+                                </li>
+                                <li class="page-item active"><a href="#!" class="page-link">1</a></li>
+                                <li class="page-item"><a href="#!" class="page-link">2</a></li>
+                                <li class="page-item"><a href="#!" class="page-link">3</a></li>
+                                <li class="page-item">
+                                    <a href="#!" class="page-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-chevron-right-outline size-4"><g data-name="Layer 2"><g data-name="chevron-right"><rect width="24" height="24" transform="rotate(-90 12 12)" opacity="0"></rect><path d="M10.5 17a1 1 0 0 1-.71-.29 1 1 0 0 1 0-1.42L13.1 12 9.92 8.69a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l3.86 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-.7.32z"></path></g></g></svg></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Add Contact Modal -->
+                    <div class="modal fade" id="addContactModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content border-0 shadow-lg">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Add New Contact</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <label class="form-label">Full Name</label>
+                                                <input type="text" class="form-control" placeholder="Enter name">
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label">Email Address</label>
+                                                <input type="email" class="form-control" placeholder="Enter email">
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label">Profile Image</label>
+                                                <input type="file" class="form-control">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+                                    <button type="button" class="btn btn-primary">Save Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div data-layout-include="layout/footer.html"></div>
+
+        </div>
+    </div>
+
+    <div data-layout-include="layout/rightbar.html"></div>
+
+    <div data-layout-include="layout/switcher.html"></div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/metisMenu.min.js"></script>
+    <script src="./js/simplebar.min.js"></script>
+    <script src="./js/eva.min.js"></script>
+    <script src="./js/scroll-top.init.js"></script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/apexcharts.min.js"></script>
+    <script src="./js/layout-loader.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
