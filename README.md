@@ -1,4 +1,4 @@
-# Aira Dashboard
+# Aira Dashboard 🧢
 [![forthebadge](https://forthebadge.com/badges/validated-html5.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/badges/built-with-love.svg)](https://www.linkedin.com/in/drphp/)
 
@@ -12,7 +12,7 @@ Aira Dashboard es una experiencia de login y dashboard web estatico pensada para
 
 El flujo actual de login usa `@rive-app/canvas`, notificaciones con AlertifyJS y una validacion de credenciales demo antes de redirigir al dashboard.
 
-## Stack Tecnico
+## Stack Técnico
 
 - Paginas estaticas HTML5
 - Estilos personalizados CSS3
@@ -20,9 +20,8 @@ El flujo actual de login usa `@rive-app/canvas`, notificaciones con AlertifyJS y
 - Recursos UI de Bootstrap
 - Runtime canvas de Rive
 - Notificaciones con AlertifyJS
-- Hosting estatico con Apache
 
-## Estructura Del Proyecto
+## Estructura del Proyecto
 
 ```text
 .
@@ -35,7 +34,7 @@ El flujo actual de login usa `@rive-app/canvas`, notificaciones con AlertifyJS y
 `-- index.html            # Pagina de login
 ```
 
-## Parciales De Layout
+## Parciales Layout
 
 El layout del dashboard esta dividido en parciales reutilizables dentro de `layout/`:
 
@@ -57,7 +56,7 @@ Ejemplo:
 
 Tambien se soportan parciales anidados. Por ejemplo, ambos sidebars cargan `layout/menu.html`, por lo que los cambios del menu se mantienen en un solo archivo.
 
-## Flujo De Login
+## Flujo Login
 
 La pagina de login es `index.html` y su comportamiento esta implementado en `js/login-rive.js`.
 
@@ -68,7 +67,7 @@ Comportamiento:
 - Las credenciales validas disparan una animacion de exito, muestran un mensaje con AlertifyJS y luego redirigen a `dashboard.html` despues de una pausa breve.
 - Al escribir en el campo password se dispara la animacion de pensamiento de Rive.
 
-## Integracion Con Rive
+## Integracion con Rive
 
 El asset de Rive esta ubicado en:
 
@@ -85,7 +84,7 @@ Configuracion del runtime:
 
 El mapeo de animaciones se mantiene en `js/login-rive.js` mediante `stateTriggerMap`.
 
-## Notas De Desarrollo
+## Notas de Desarrollo
 
 - Mantener los cambios de navegacion compartida en `layout/menu.html`.
 - Mantener los cambios del shell de layout en el parcial correspondiente dentro de `layout/`.
@@ -93,7 +92,7 @@ El mapeo de animaciones se mantiene en `js/login-rive.js` mediante `stateTrigger
 - Validar la sintaxis JavaScript con `node --check` al editar scripts standalone.
 - Evitar duplicar markup de layout en paginas individuales salvo que la pagina deba separarse intencionalmente del layout compartido.
 
-## Checklist De Verificacion
+## Checklist Verificación
 
 Antes de publicar cambios, verificar:
 
