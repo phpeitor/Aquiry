@@ -6,38 +6,38 @@
   <img src="https://pbs.twimg.com/profile_images/1012619468604755968/allRIIOy.jpg" alt="Instagram" width="300">
 </a>
 
-## Overview
+## Descripcion General
 
-Aira Dashboard is a static web dashboard and login experience built for Apache-hosted environments. The project combines a reusable HTML layout system, a Rive-powered login animation, Bootstrap-based UI assets, and dashboard pages that can be served directly from the web root without a build step.
+Aira Dashboard es una experiencia de login y dashboard web estatico pensada para ejecutarse en entornos hospedados con Apache. El proyecto combina un sistema de layouts HTML reutilizables, una animacion de login con Rive, recursos UI basados en Bootstrap y paginas de dashboard que pueden servirse directamente desde el web root sin proceso de build.
 
-The current login flow uses `@rive-app/canvas`, Alertify notifications, and a demo credential check before redirecting to the dashboard.
+El flujo actual de login usa `@rive-app/canvas`, notificaciones con AlertifyJS y una validacion de credenciales demo antes de redirigir al dashboard.
 
-## Tech Stack
+## Stack Tecnico
 
-- HTML5 static pages
-- CSS3 custom styling
-- JavaScript ES modules and browser scripts
-- Bootstrap assets
-- Rive canvas runtime
-- AlertifyJS notifications
-- Apache static hosting
+- Paginas estaticas HTML5
+- Estilos personalizados CSS3
+- JavaScript para navegador
+- Recursos UI de Bootstrap
+- Runtime canvas de Rive
+- Notificaciones con AlertifyJS
+- Hosting estatico con Apache
 
-## Project Structure
+## Estructura Del Proyecto
 
 ```text
 .
-|-- css/                  # Vendor and custom styles
-|-- images/               # Template images and logos
-|-- js/                   # App, layout, dashboard, and login scripts
-|-- layout/               # Reusable HTML partials
-|-- resources/            # Rive, video, and static media assets
-|-- dashboard.html        # Main dashboard page
-`-- index.html            # Login page
+|-- css/                  # Estilos vendor y personalizados
+|-- images/               # Imagenes y logos del template
+|-- js/                   # Scripts de app, layout, dashboard y login
+|-- layout/               # Parciales HTML reutilizables
+|-- resources/            # Assets Rive, videos y recursos estaticos
+|-- dashboard.html        # Pagina principal del dashboard
+`-- index.html            # Pagina de login
 ```
 
-## Layout Partials
+## Parciales De Layout
 
-The dashboard layout is split into reusable partials under `layout/`:
+El layout del dashboard esta dividido en parciales reutilizables dentro de `layout/`:
 
 - `layout/header.html`
 - `layout/sidebar-menu.html`
@@ -47,87 +47,62 @@ The dashboard layout is split into reusable partials under `layout/`:
 - `layout/rightbar.html`
 - `layout/switcher.html`
 
-Partials are loaded by `js/layout-loader.js` through elements using `data-layout-include`.
+Los parciales se cargan mediante `js/layout-loader.js` usando elementos con `data-layout-include`.
 
-Example:
+Ejemplo:
 
 ```html
 <div data-layout-include="layout/header.html"></div>
 ```
 
-Nested partials are supported. For example, both sidebar templates load `layout/menu.html` so menu changes only need to be maintained in one place.
+Tambien se soportan parciales anidados. Por ejemplo, ambos sidebars cargan `layout/menu.html`, por lo que los cambios del menu se mantienen en un solo archivo.
 
-## Login Flow
+## Flujo De Login
 
-The login page is `index.html` and is powered by `js/login-rive.js`.
+La pagina de login es `index.html` y su comportamiento esta implementado en `js/login-rive.js`.
 
-Demo credentials:
+Comportamiento:
 
-```text
-User: demo@demo.com
-Password: demo123
-```
+- Los campos vacios muestran estilos de validacion y un mensaje de error con AlertifyJS.
+- Las credenciales invalidas disparan una animacion de error y muestran un mensaje de error con AlertifyJS.
+- Las credenciales validas disparan una animacion de exito, muestran un mensaje con AlertifyJS y luego redirigen a `dashboard.html` despues de una pausa breve.
+- Al escribir en el campo password se dispara la animacion de pensamiento de Rive.
 
-Behavior:
+## Integracion Con Rive
 
-- Empty fields show validation styling and an Alertify error message.
-- Invalid credentials trigger an error animation and show an Alertify error message.
-- Valid credentials trigger a success animation, show an Alertify success message, then redirect to `dashboard.html` after a short delay.
-- Password input triggers the Rive thinking animation.
-
-## Rive Integration
-
-The Rive asset is located at:
+El asset de Rive esta ubicado en:
 
 ```text
 resources/aira.riv
 ```
 
-Runtime configuration:
+Configuracion del runtime:
 
 - Artboard: `aira artboard`
 - State machine: `State Machine 5`
 - Runtime: `@rive-app/canvas`
-- Canvas element: `#rive-canvas`
+- Elemento canvas: `#rive-canvas`
 
-Animation mappings are maintained in `js/login-rive.js` through `stateTriggerMap`.
+El mapeo de animaciones se mantiene en `js/login-rive.js` mediante `stateTriggerMap`.
 
-## Running Locally
+## Notas De Desarrollo
 
-Serve the project through Apache or another local HTTP server. Do not open `index.html` directly with `file://`, because browser security restrictions can block asset loading.
+- Mantener los cambios de navegacion compartida en `layout/menu.html`.
+- Mantener los cambios del shell de layout en el parcial correspondiente dentro de `layout/`.
+- Usar query strings de cache busting cuando se modifiquen CSS o JS referenciados por paginas HTML estaticas.
+- Validar la sintaxis JavaScript con `node --check` al editar scripts standalone.
+- Evitar duplicar markup de layout en paginas individuales salvo que la pagina deba separarse intencionalmente del layout compartido.
 
-Apache example:
+## Checklist De Verificacion
 
-```text
-http://127.0.0.1/davila/
-```
+Antes de publicar cambios, verificar:
 
-## Development Notes
+- `index.html` carga sin errores en consola.
+- `resources/aira.riv` responde `200 OK` desde el servidor.
+- Los campos vacios del login muestran validacion y animacion de error.
+- Las credenciales incorrectas muestran error con AlertifyJS y animacion de error.
+- Las credenciales correctas muestran exito con AlertifyJS, reproducen animacion de exito y redirigen a `dashboard.html`.
+- Los parciales del layout del dashboard cargan correctamente.
+- Los items del sidebar se renderizan desde `layout/menu.html`.
 
-- Keep shared navigation changes in `layout/menu.html`.
-- Keep layout shell changes in the relevant partial under `layout/`.
-- Use cache-busting query strings when changing CSS or JS referenced by static HTML pages.
-- Validate JavaScript syntax with `node --check` when editing standalone scripts.
-- Avoid duplicating layout markup in individual pages unless the page intentionally diverges from the shared layout.
-
-## Verification Checklist
-
-Before shipping changes, verify:
-
-- `index.html` loads without console errors.
-- `resources/aira.riv` returns `200 OK` from the server.
-- Empty login fields show validation and an error animation.
-- Wrong credentials show Alertify error and an error animation.
-- Correct credentials show Alertify success, play success animation, and redirect to `dashboard.html`.
-- Dashboard layout partials load correctly.
-- Sidebar menu items render from `layout/menu.html`.
-
-## Browser Cache
-
-If recent changes do not appear, perform a hard refresh:
-
-```text
-Ctrl + F5
-```
-
-Static pages in this project use query string versions on CSS and JS files to reduce stale browser-cache issues during development.
+Las paginas estaticas del proyecto usan versiones por query string en archivos CSS y JS para reducir problemas de cache durante el desarrollo.
